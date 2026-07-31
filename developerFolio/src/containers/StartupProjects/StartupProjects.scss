@@ -88,3 +88,64 @@
     text-align: center;
   }
 }
+
+/* Tech Stack Chips */
+.project-tech-stack {
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+}
+
+.tech-stack-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 0.5rem;
+
+  &.dark-mode {
+    color: #aaa;
+  }
+}
+
+.tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(85, 25, 139, 0.12), rgba(140, 67, 206, 0.18));
+  color: #55198b;
+  border: 1px solid rgba(85, 25, 139, 0.25);
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2em 0.75em;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(85, 25, 139, 0.22), rgba(140, 67, 206, 0.3));
+    border-color: rgba(85, 25, 139, 0.5);
+    transform: translateY(-1px);
+  }
+}
+
+.tech-chip-dark {
+  background: linear-gradient(135deg, rgba(140, 67, 206, 0.2), rgba(170, 100, 230, 0.28));
+  color: #c880f5;
+  border: 1px solid rgba(170, 100, 230, 0.35);
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(140, 67, 206, 0.35), rgba(170, 100, 230, 0.42));
+    border-color: rgba(170, 100, 230, 0.6);
+    transform: translateY(-1px);
+  }
+}

@@ -4,6 +4,25 @@ All notable changes to the portfolio website project are documented here using s
 
 ---
 
+## [1.2.0] - 2026-07-31
+
+### Added
+- **Project URLs**: Added clickable footer links to four projects — Mahabharat (YouTube), Stocks Insights Agent (GitHub), Daily CA Insights (GitHub), and Pulse Vector (4 YouTube playlists).
+- **Tech Stack Chips**: Each project card now displays styled pill badges for its tech stack below the description. Hover animations and dark-mode variants included.
+- **Jio Platforms Experience**: Replaced the placeholder Facebook/Quora/Airbnb experience entries with a complete, professional Jio Platforms AI/ML Engineer entry — includes role, date, description, and 5 bullet points covering RAG, MLOps, FastAPI, GenAI, and LLM optimization.
+- **Jio Logo Asset**: Generated and committed `jioLogo.png` to `src/assets/images/`.
+
+### Changed
+- **Removed "pipeline" word** from all project titles and descriptions (Mahabharat, Pulse Vector, Daily CA Insights, section subtitle).
+- **Renamed** `bigProjects.title` from "Projects under Review" to "Projects".
+- **URL_TRACKER.md** updated to track all 8 new project/playlist URLs.
+
+### Refactored
+- **StartupProject.js**: Added `techStack` rendering JSX block between description and footer links.
+- **StartupProjects.scss**: Added `.tech-chip`, `.tech-chip-dark`, `.tech-chips`, `.project-tech-stack`, `.tech-stack-label` styles.
+
+---
+
 ## [1.1.0] - 2026-07-31
 
 ### Added

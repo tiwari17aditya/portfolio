@@ -190,29 +190,18 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "AI / ML Engineer",
+      company: "Jio Platforms",
+      companylogo: require("./assets/images/jioLogo.png"),
+      date: "Aug 2022 – Present",
+      desc: "Working at the heart of India's largest digital ecosystem, I contribute to building intelligent, scalable AI infrastructure that powers millions of users. My role spans end-to-end ownership of ML and GenAI systems — from research and prototyping to production deployment.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Architected and deployed Retrieval-Augmented Generation (RAG) systems using LangChain, LlamaIndex, and OpenAI APIs to enable context-aware, enterprise-grade conversational AI at scale.",
+        "Built and maintained robust MLOps infrastructure using Docker, Kubernetes, and Apache Airflow — automating model training, evaluation, and deployment workflows across cloud environments.",
+        "Engineered high-throughput real-time inference APIs with FastAPI, significantly reducing model serving latency and enabling seamless integration with production-grade Jio products.",
+        "Collaborated with cross-functional teams including data engineering, product, and DevOps to deliver end-to-end Generative AI features with measurable business impact.",
+        "Optimized LLM-based solutions using Groq, Ollama, and Hugging Face Transformers — balancing performance, cost-efficiency, and accuracy for diverse use cases across the Jio digital platform."
       ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
@@ -228,13 +217,14 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects under Review",
-  subtitle: "A COMPARATIVE ARCHITECTURAL AUDIT OF FIVE PRODUCTION PIPELINES AND WEB APPS",
+  title: "Projects",
+  subtitle: "A SHOWCASE OF FIVE PRODUCTION-GRADE AI, AUTOMATION & WEB APPLICATIONS",
   projects: [
     {
       image: require("./assets/images/vitals_guard_logo.png"),
       projectName: "Medication Tracker (VitalsGuard)",
-      projectDesc: "A robust health tracking SPA + PWA app built with React, TypeScript, and Supabase. Features a dual-storage engine (Supabase cloud + LocalStorage fallback) for high network resilience, secure password-protected admin panels, server-side mail sending, and a semantically versioned release workflow.",
+      projectDesc: "A robust health tracking SPA + PWA app with a dual-storage engine (Supabase cloud + LocalStorage fallback) for high network resilience, secure password-protected admin panels, server-side mail sending, and a semantically versioned release workflow.",
+      techStack: ["React", "TypeScript", "Supabase", "PWA", "Vercel"],
       footerLink: [
         {
           name: "Visit Deployed Site",
@@ -244,27 +234,63 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/mahabharat_pipeline_logo.png"),
-      projectName: "Mahabharat (Automated Video Pipeline)",
-      projectDesc: "An automated multi-platform video pipeline built with Python, Node.js, and Remotion. Features automated generation of story scripts and storyboards, dynamic React video template compiling via Remotion, quota manager systems, and an integrated deployment dashboard.",
-      footerLink: []
+      projectName: "Mahabharat (Automated Video)",
+      projectDesc: "An automated multi-platform video production system featuring AI-powered story script and storyboard generation, dynamic React video template compiling via Remotion, quota manager systems, and an integrated deployment dashboard.",
+      techStack: ["Python", "Node.js", "Remotion", "React", "Gemini API"],
+      footerLink: [
+        {
+          name: "Watch on YouTube",
+          url: "https://www.youtube.com/playlist?list=PLTdRkcKiCRVA"
+        }
+      ]
     },
     {
       image: require("./assets/images/stock_analysis_logo.png"),
-      projectName: "Stock Analysis Agent",
-      projectDesc: "An agentic AI stock insights generator using CrewAI and Python. Performs multi-agent reasoning, transcript fetching, and local/cloud LLM analysis (Ollama/Groq) to send automated daily insights via SMTP, scheduled with GitHub Actions.",
-      footerLink: []
+      projectName: "Stocks Insights Agent",
+      projectDesc: "An agentic AI stock insights generator performing multi-agent reasoning, transcript fetching, and local/cloud LLM analysis to send automated daily insights via SMTP, scheduled with GitHub Actions.",
+      techStack: ["Python", "CrewAI", "Ollama", "Groq", "GitHub Actions", "SMTP"],
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tiwari17aditya/stocks_insights_agent"
+        }
+      ]
     },
     {
       image: require("./assets/images/pulse_vector_logo.png"),
-      projectName: "Pulse Vector Pipeline",
-      projectDesc: "A highly sophisticated automated content production engine. Features CAD-based scheduling (daily, weekly, monthly, brainteaser workflows) using Python, Gemini API, and Supabase Storage for asset offloading and video processing.",
-      footerLink: []
+      projectName: "Pulse Vector",
+      projectDesc: "A highly sophisticated automated content production engine featuring CAD-based scheduling (daily, weekly, monthly, brainteaser workflows) with Gemini API-powered content generation and Supabase Storage for asset offloading and video processing.",
+      techStack: ["Python", "Gemini API", "Supabase", "FFmpeg", "YouTube API"],
+      footerLink: [
+        {
+          name: "Playlist — Current Affairs",
+          url: "https://www.youtube.com/playlist?list=PLENP5DyB-lS4"
+        },
+        {
+          name: "Playlist — Science & Tech",
+          url: "https://www.youtube.com/playlist?list=PL4PQLXRi54n0N77FH_C4UuQ-CbLOrlM6x"
+        },
+        {
+          name: "Playlist — History",
+          url: "https://www.youtube.com/playlist?list=PLOdUTUEs2aW4"
+        },
+        {
+          name: "Playlist — Brainteaser",
+          url: "https://www.youtube.com/playlist?list=PL4PQLXRi54n0f5deGjKOCuz3VbMOMzmxO"
+        }
+      ]
     },
     {
       image: require("./assets/images/daily_ca_insights_logo.png"),
       projectName: "Daily Current Affairs Insights",
-      projectDesc: "A cloud-native, zero-CPU agentic pipeline running on GitHub Actions. Automatically fetches transcripts from YouTube playlists, utilizes Groq API rate-limit header tracking to optimize execution, and commits idempotency states back to Git on SMTP success.",
-      footerLink: []
+      projectDesc: "A cloud-native, zero-CPU agentic system running on GitHub Actions. Automatically fetches transcripts from YouTube playlists, utilizes Groq API rate-limit header tracking to optimize execution, and commits idempotency states back to Git on SMTP success.",
+      techStack: ["Python", "GitHub Actions", "Groq API", "YouTube API", "SMTP"],
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tiwari17aditya/Antigravity-daily-CA-Insights"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true

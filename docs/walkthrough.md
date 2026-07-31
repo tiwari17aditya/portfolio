@@ -62,3 +62,39 @@ From [logs/usage_telemetry.md](file:///e:/hdd-data/Projects/portfolio-website/lo
 Since you manually created the `portfolio` project on Vercel and linked the GitHub repository:
 - **Zero Configuration**: The newly pushed [vercel.json](file:///e:/hdd-data/Projects/portfolio-website/vercel.json) automatically directs Vercel to install packages using `--legacy-peer-deps`, override the public path URL prefix to `/` (fixing the 404 assets issue), build, and serve the site from the `developerFolio/build` output.
 - **Auto Deploy**: Your latest commit (**"Restructure project, add logs..."**) has been pushed to GitHub and Vercel has automatically queued and started compiling it.
+
+---
+
+## 4. v1.2.0 — Content & UI Updates (2026-07-31)
+
+### Changes Applied
+
+#### Project URLs & Links
+All four previously link-less projects now have clickable footer buttons:
+
+| Project | Link |
+|---|---|
+| Mahabharat | Watch on YouTube |
+| Stocks Insights Agent | View on GitHub |
+| Pulse Vector | 4 × YouTube Playlist links |
+| Daily Current Affairs Insights | View on GitHub |
+
+#### Tech Stack Chips
+- Added `project.techStack` field to all 5 projects in [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js)
+- Updated [StartupProject.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/containers/StartupProjects/StartupProject.js) to render chips conditionally
+- Added chip styles to [StartupProjects.scss](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/containers/StartupProjects/StartupProjects.scss) with purple gradient theme + dark mode + hover lift animation
+
+#### "Pipeline" Removal
+- Titles: "Mahabharat (Automated Video Pipeline)" → "Mahabharat (Automated Video)", "Pulse Vector Pipeline" → "Pulse Vector"
+- Descriptions & section subtitle cleansed of the word "pipeline"
+
+#### Work Experience — Jio Platforms
+- Replaced placeholder entries (Facebook, Quora, Airbnb) with a single real entry
+- **Company**: Jio Platforms | **Role**: AI / ML Engineer | **Period**: Aug 2022 – Present
+- 5 professional bullet points: RAG systems, MLOps infra, FastAPI inference APIs, GenAI collaboration, LLM optimization
+- Generated Jio logo asset (`jioLogo.png`) saved to `developerFolio/src/assets/images/`
+
+### Compile & Verification
+- React build: `Compiled successfully!` (no warnings/errors)
+- Dev server: `http://localhost:3000/portfolio`
+- All sections verified live in browser DOM

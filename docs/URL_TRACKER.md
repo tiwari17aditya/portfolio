@@ -30,12 +30,17 @@ This document catalogs all external URLs, links, social media addresses, endpoin
 
 | Project Name | URL | Reference |
 |---|---|---|
-| **Medication Tracker (VitalsGuard)** | `https://vitalsguard-health-medication-track.vercel.app/` | [portfolio.js:241](file:///e:/hdd-data/Projects/portfolio-website/portfolio.js#L241) |
-| **GitHub Pages Domain** | `https://tiwari17aditya.github.io/portfolio` | [package.json:2](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/package.json#L2) |
-| **GitHub Remote Repo** | `https://github.com/tiwari17aditya/portfolio.git` | [git remote url](file:///e:/hdd-data/Projects/portfolio-website/.git/config#L9) |
-| **Saayahealth** | `http://saayahealth.com/` | [portfolio.js:241](file:///e:/hdd-data/Projects/portfolio-website/portfolio.js#L241) |
-| **Nextu** | `http://nextu.se/` | [portfolio.js:253](file:///e:/hdd-data/Projects/portfolio-website/portfolio.js#L253) |
-| **PWA OLX Project** | `https://pakistan-olx-1.firebaseapp.com/` | [portfolio.js:314](file:///e:/hdd-data/Projects/portfolio-website/portfolio.js#L314) |
+| **Medication Tracker (VitalsGuard)** | `https://vitalsguard-health-medication-track.vercel.app/` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Mahabharat — YouTube Playlist** | `https://www.youtube.com/playlist?list=PLTdRkcKiCRVA` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Stocks Insights Agent — GitHub** | `https://github.com/tiwari17aditya/stocks_insights_agent` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Pulse Vector — Current Affairs Playlist** | `https://www.youtube.com/playlist?list=PLENP5DyB-lS4` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Pulse Vector — Science & Tech Playlist** | `https://www.youtube.com/playlist?list=PL4PQLXRi54n0N77FH_C4UuQ-CbLOrlM6x` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Pulse Vector — History Playlist** | `https://www.youtube.com/playlist?list=PLOdUTUEs2aW4` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Pulse Vector — Brainteaser Playlist** | `https://www.youtube.com/playlist?list=PL4PQLXRi54n0f5deGjKOCuz3VbMOMzmxO` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Daily CA Insights — GitHub** | `https://github.com/tiwari17aditya/Antigravity-daily-CA-Insights` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **GitHub Pages Domain** | `https://tiwari17aditya.github.io/portfolio` | [package.json](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/package.json) |
+| **GitHub Remote Repo** | `https://github.com/tiwari17aditya/portfolio.git` | git remote |
+| **PWA OLX Project** | `https://pakistan-olx-1.firebaseapp.com/` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/portfolio.js) |
 
 ---
 
