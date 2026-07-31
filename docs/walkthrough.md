@@ -16,7 +16,8 @@ portfolio-website/
 │   ├── README.md                   # Setup manual & pointers
 │   ├── TECH_STACK.md               # Technology matrix
 │   ├── CHANGELOG.md                # Release versioning
-│   └── URL_TRACKER.md              # Catalog of all configuration URLs
+│   ├── URL_TRACKER.md              # Catalog of all configuration URLs
+│   └── ENHANCEMENTS.md             # Enhancement suggestions and roadmap
 ├── logs/                           # Automated build-time logging and metrics
 │   ├── log_31_July_2026.log        # Daily build log
 │   ├── usage_telemetry.md          # Execution tracking table
