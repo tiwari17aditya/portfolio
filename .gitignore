@@ -1,0 +1,23 @@
+# dependencies
+developerFolio/node_modules/
+node_modules/
+
+# production
+developerFolio/build/
+build/
+
+# env / secrets
+developerFolio/.env
+developerFolio/.env.local
+developerFolio/.env.development.local
+developerFolio/.env.test.local
+developerFolio/.env.production.local
+.env
+.env.local
+
+# misc
+.DS_Store
+*.log
+.pnp
+.pnp.js
+/coverage
