@@ -2,6 +2,13 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.4.0] - 2026-08-08
+
+### Added
+- **AI-Generated Default Project Logos**: Generated tailored visual graphics depicting the structure, architecture, and purpose for all 12 projects lacking explicit custom images, replacing generic SVG placeholders across the portfolio.
+
+---
+
 ## [1.3.3] - 2026-08-08
 
 ### Changed

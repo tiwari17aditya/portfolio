@@ -289,7 +289,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/developerActivity.svg"),
+      image: require("./assets/images/orchestrator_prime_logo.png"),
       projectName: "Orchestrator Prime (Family Management)",
       projectDesc: "A fully local, 100% open-source, privacy-first multi-agent AI system for managing family interactions, tasks, schedules, and document intelligence with FastAPI backends and local LLM inference.",
       techStack: ["Python", "FastAPI", "Groq", "Ollama", "Multi-Agent"],
@@ -301,7 +301,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/jsFramework.svg"),
+      image: require("./assets/images/vibrant_music_academy_logo.png"),
       projectName: "Vibrant Music Academy",
       projectDesc: "A modern, high-performance web application & interactive music academy platform built for Vibrant Music Academy with responsive dynamic course listings, audio previews, and sleek UI components.",
       techStack: ["React", "JavaScript", "Vite", "CSS3"],
@@ -313,7 +313,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/programmer.svg"),
+      image: require("./assets/images/target_air_10_logo.png"),
       projectName: "TARGET AIR 10 (Banking Exam Tracker)",
       projectDesc: "A high-performance, single-page web application (SPA) for tracking 399 test papers across 20 mock test categories, featuring analytics, revision countdowns, and automated progress logging.",
       techStack: ["JavaScript", "HTML5", "CSS3", "GitHub Actions"],
@@ -325,7 +325,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/manOnTable.svg"),
+      image: require("./assets/images/travel_planner_agent_logo.png"),
       projectName: "Agentic AI Travel Planner",
       projectDesc: "An autonomous, multi-tool AI agent built with LangGraph and Gemini Flash that gathers real-time weather, flight, and hotel data to construct personalized, cost-optimized travel itineraries.",
       techStack: ["Python", "LangChain", "Streamlit", "Gemini API", "Docker"],
@@ -337,7 +337,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/developerActivity.svg"),
+      image: require("./assets/images/repo_insight_logo.png"),
       projectName: "RepoInsight (Codebase Graph Intelligence)",
       projectDesc: "A graph database-powered code analysis tool that parses ASTs, tracks inter-module dependencies with Neo4j, and provides interactive visualization of complex software architectures.",
       techStack: ["Python", "Neo4j", "Docker", "Data Science"],
@@ -349,7 +349,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/jsFramework.svg"),
+      image: require("./assets/images/financial_hub_ai_logo.png"),
       projectName: "Financial Hub AI",
       projectDesc: "An interactive multi-agent financial dashboard providing AI-driven stock sentiment analysis, SEC filing summarization, and automated portfolio asset allocation insights.",
       techStack: ["Python", "Streamlit", "LangChain", "OpenAI"],
@@ -361,7 +361,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/programmer.svg"),
+      image: require("./assets/images/weather_agentic_ai_logo.png"),
       projectName: "Weather Agentic AI",
       projectDesc: "A context-aware weather decision support agent powered by LangChain and OpenWeather APIs that converts live meteorological forecasts into actionable event recommendations.",
       techStack: ["Python", "LangChain", "Streamlit", "OpenWeather API"],
@@ -373,7 +373,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/developerActivity.svg"),
+      image: require("./assets/images/git_auto_push_logo.png"),
       projectName: "Git Auto-Push Automation",
       projectDesc: "A minimal, professional, and portable tool to automate Git activity by recording daily execution logs and pushing commits reliably across configured repositories.",
       techStack: ["Python", "GitHub Actions", "Git CLI", "Bash"],
@@ -385,7 +385,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/manOnTable.svg"),
+      image: require("./assets/images/langgraph_chatbot_logo.png"),
       projectName: "Basic LangGraph Chatbot",
       projectDesc: "A stateful conversational AI chatbot built on LangGraph demonstrating human-in-the-loop validation, memory persistence, and dynamic fallback state routing.",
       techStack: ["Python", "LangGraph", "LangChain"],
@@ -397,7 +397,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/programmer.svg"),
+      image: require("./assets/images/personal_tracker_logo.png"),
       projectName: "Professional Personal Tracker",
       projectDesc: "A robust, CLI-based progress and habit tracking platform built with Python and Rich for terminal-rendered charts, data exports, and milestone tracking.",
       techStack: ["Python", "Rich CLI", "JSON Engine"],
@@ -409,7 +409,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/jsFramework.svg"),
+      image: require("./assets/images/project_converter_logo.png"),
       projectName: "Project Converter Utility",
       projectDesc: "An extensible file and project format conversion engine capable of converting document templates, markdown assets, and code structures with custom pipelines.",
       techStack: ["Python", "CLI Tooling"],
@@ -421,7 +421,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/developerActivity.svg"),
+      image: require("./assets/images/google_takeout_organizer_logo.png"),
       projectName: "Google Takeout Organizer",
       projectDesc: "An automated media sorting and deduplication tool designed to process massive Google Takeout archives, extract EXIF metadata, and restore original folder hierarchies.",
       techStack: ["Python", "EXIF Data Engine"],
