@@ -2,6 +2,16 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.3.1] - 2026-08-08
+
+### Added
+- **Token Optimization Skill**: Added `.agents/skills/token-optimization/SKILL.md` detailing context windowing, payload pruning, prompt caching, and token telemetry tracking.
+
+### Refactored
+- **Cleaned Duplicate Directories**: Consolidated all skills and router tables under standard `.agents/` directory and eliminated duplicate `.agent/` folder.
+
+---
+
 ## [1.3.0] - 2026-08-08
 
 ### Added

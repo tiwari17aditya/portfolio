@@ -1,6 +1,6 @@
 # Version Tracking
 
-Current Project Version: **v1.3.0**  
+Current Project Version: **v1.3.1**  
 Release Date: **2026-08-08**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
@@ -8,9 +8,14 @@ Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ## Release History
 
+### v1.3.1 (2026-08-08)
+- **Skill Standardization**: Consolidated all custom skills, automation scripts, and router tables under standard `.agents/` workspace directory and removed duplicate `.agent/` folder.
+- **Token Optimization Skill**: Created `.agents/skills/token-optimization/SKILL.md` defining token budgeting, context pruning, prompt caching, and telemetry tracking guidelines.
+- **Packup Workflow Execution**: Synchronized documentation, session token telemetry, and Git repository state.
+
 ### v1.3.0 (2026-08-08)
 - **17 Portfolio Projects**: Fully scanned `C:\Users\Admin\Desktop\Projects` recursively (resolving shortcuts to `D:\Antigravity-Projects`, `D:\youtube-projects`, `E:\hdd-data\Projects`, and `E:\hdd-data\pulse-vector`) and updated `portfolio.js` with 17 production-grade AI, MLOps, automation, and web application projects.
-- **Automated Skill Trigger**: Added `/update-portfolio` skill in `.agent/skills/update-portfolio/SKILL.md` with an automated python scanner `update_portfolio.py`.
+- **Automated Skill Trigger**: Added `/update-portfolio` skill with automated python scanner `update_portfolio.py`.
 - **Packup Automation**: Updated `packup` workflow with session token tracking, version tracking, session summaries, documentation synchronization, and Git automation.
 
 ### v1.2.0 (2026-07-31)
