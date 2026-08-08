@@ -218,29 +218,37 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "A SHOWCASE OF FIVE PRODUCTION-GRADE AI, AUTOMATION & WEB APPLICATIONS",
+  subtitle: "A SHOWCASE OF 17 PRODUCTION-GRADE AI, AUTOMATION, MLOPS & WEB APPLICATIONS",
   projects: [
     {
       image: require("./assets/images/vitals_guard_logo.png"),
       projectName: "Medication Tracker (VitalsGuard)",
       projectDesc: "A robust health tracking SPA + PWA app with a dual-storage engine (Supabase cloud + LocalStorage fallback) for high network resilience, secure password-protected admin panels, server-side mail sending, and a semantically versioned release workflow.",
-      techStack: ["React", "TypeScript", "Supabase", "PWA", "Vercel"],
+      techStack: ["React", "TypeScript", "Supabase", "PWA", "Vercel", "Vite"],
       footerLink: [
         {
           name: "Visit Deployed Site",
           url: "https://vitalsguard-health-medication-track.vercel.app/"
+        },
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tiwari17aditya/VitalsGuard-Health-Medication-Tracker"
         }
       ]
     },
     {
       image: require("./assets/images/mahabharat_pipeline_logo.png"),
-      projectName: "Mahabharat (Automated Video)",
+      projectName: "Mahabharat (Automated Video Production)",
       projectDesc: "An automated multi-platform video production system featuring AI-powered story script and storyboard generation, dynamic React video template compiling via Remotion, quota manager systems, and an integrated deployment dashboard.",
-      techStack: ["Python", "Node.js", "Remotion", "React", "Gemini API"],
+      techStack: ["Python", "Node.js", "Remotion", "React", "Gemini API", "GitHub Actions"],
       footerLink: [
         {
           name: "Watch on YouTube",
           url: "https://www.youtube.com/playlist?list=PLTdRkcKiCRVA"
+        },
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tiwari17aditya/mahabharata-series-yt-animated"
         }
       ]
     },
@@ -263,20 +271,8 @@ const bigProjects = {
       techStack: ["Python", "Gemini API", "Supabase", "FFmpeg", "YouTube API"],
       footerLink: [
         {
-          name: "Playlist — Current Affairs",
-          url: "https://www.youtube.com/playlist?list=PLENP5DyB-lS4"
-        },
-        {
-          name: "Playlist — Science & Tech",
-          url: "https://www.youtube.com/playlist?list=PL4PQLXRi54n0N77FH_C4UuQ-CbLOrlM6x"
-        },
-        {
-          name: "Playlist — History",
-          url: "https://www.youtube.com/playlist?list=PLOdUTUEs2aW4"
-        },
-        {
-          name: "Playlist — Brainteaser",
-          url: "https://www.youtube.com/playlist?list=PL4PQLXRi54n0f5deGjKOCuz3VbMOMzmxO"
+          name: "View on GitHub",
+          url: "https://github.com/tiwari17aditya/pulsevector"
         }
       ]
     },
@@ -289,6 +285,150 @@ const bigProjects = {
         {
           name: "View on GitHub",
           url: "https://github.com/tiwari17aditya/Antigravity-daily-CA-Insights"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/developerActivity.svg"),
+      projectName: "Orchestrator Prime (Family Management)",
+      projectDesc: "A fully local, 100% open-source, privacy-first multi-agent AI system for managing family interactions, tasks, schedules, and document intelligence with FastAPI backends and local LLM inference.",
+      techStack: ["Python", "FastAPI", "Groq", "Ollama", "Multi-Agent"],
+      footerLink: [
+        {
+          name: "View Local Architecture",
+          url: "https://github.com/tiwari17aditya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/jsFramework.svg"),
+      projectName: "Vibrant Music Academy",
+      projectDesc: "A modern, high-performance web application & interactive music academy platform built for Vibrant Music Academy with responsive dynamic course listings, audio previews, and sleek UI components.",
+      techStack: ["React", "JavaScript", "Vite", "CSS3"],
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tiwari17aditya/vibrant-music-academy"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/programmer.svg"),
+      projectName: "TARGET AIR 10 (Banking Exam Tracker)",
+      projectDesc: "A high-performance, single-page web application (SPA) for tracking 399 test papers across 20 mock test categories, featuring analytics, revision countdowns, and automated progress logging.",
+      techStack: ["JavaScript", "HTML5", "CSS3", "GitHub Actions"],
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tiwari17aditya/adda-timetable-revision"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/manOnTable.svg"),
+      projectName: "Agentic AI Travel Planner",
+      projectDesc: "An autonomous, multi-tool AI agent built with LangGraph and Gemini Flash that gathers real-time weather, flight, and hotel data to construct personalized, cost-optimized travel itineraries.",
+      techStack: ["Python", "LangChain", "Streamlit", "Gemini API", "Docker"],
+      footerLink: [
+        {
+          name: "View Architecture",
+          url: "https://github.com/tiwari17aditya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/developerActivity.svg"),
+      projectName: "RepoInsight (Codebase Graph Intelligence)",
+      projectDesc: "A graph database-powered code analysis tool that parses ASTs, tracks inter-module dependencies with Neo4j, and provides interactive visualization of complex software architectures.",
+      techStack: ["Python", "Neo4j", "Docker", "Data Science"],
+      footerLink: [
+        {
+          name: "View Architecture",
+          url: "https://github.com/tiwari17aditya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/jsFramework.svg"),
+      projectName: "Financial Hub AI",
+      projectDesc: "An interactive multi-agent financial dashboard providing AI-driven stock sentiment analysis, SEC filing summarization, and automated portfolio asset allocation insights.",
+      techStack: ["Python", "Streamlit", "LangChain", "OpenAI"],
+      footerLink: [
+        {
+          name: "View Architecture",
+          url: "https://github.com/tiwari17aditya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/programmer.svg"),
+      projectName: "Weather Agentic AI",
+      projectDesc: "A context-aware weather decision support agent powered by LangChain and OpenWeather APIs that converts live meteorological forecasts into actionable event recommendations.",
+      techStack: ["Python", "LangChain", "Streamlit", "OpenWeather API"],
+      footerLink: [
+        {
+          name: "View Architecture",
+          url: "https://github.com/tiwari17aditya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/developerActivity.svg"),
+      projectName: "Git Auto-Push Automation",
+      projectDesc: "A minimal, professional, and portable tool to automate Git activity by recording daily execution logs and pushing commits reliably across configured repositories.",
+      techStack: ["Python", "GitHub Actions", "Git CLI", "Bash"],
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/Adistar656/everydaypush"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/manOnTable.svg"),
+      projectName: "Basic LangGraph Chatbot",
+      projectDesc: "A stateful conversational AI chatbot built on LangGraph demonstrating human-in-the-loop validation, memory persistence, and dynamic fallback state routing.",
+      techStack: ["Python", "LangGraph", "LangChain"],
+      footerLink: [
+        {
+          name: "View Architecture",
+          url: "https://github.com/tiwari17aditya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/programmer.svg"),
+      projectName: "Professional Personal Tracker",
+      projectDesc: "A robust, CLI-based progress and habit tracking platform built with Python and Rich for terminal-rendered charts, data exports, and milestone tracking.",
+      techStack: ["Python", "Rich CLI", "JSON Engine"],
+      footerLink: [
+        {
+          name: "View Codebase",
+          url: "https://github.com/tiwari17aditya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/jsFramework.svg"),
+      projectName: "Project Converter Utility",
+      projectDesc: "An extensible file and project format conversion engine capable of converting document templates, markdown assets, and code structures with custom pipelines.",
+      techStack: ["Python", "CLI Tooling"],
+      footerLink: [
+        {
+          name: "View Codebase",
+          url: "https://github.com/tiwari17aditya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/developerActivity.svg"),
+      projectName: "Google Takeout Organizer",
+      projectDesc: "An automated media sorting and deduplication tool designed to process massive Google Takeout archives, extract EXIF metadata, and restore original folder hierarchies.",
+      techStack: ["Python", "EXIF Data Engine"],
+      footerLink: [
+        {
+          name: "View Codebase",
+          url: "https://github.com/tiwari17aditya"
         }
       ]
     }

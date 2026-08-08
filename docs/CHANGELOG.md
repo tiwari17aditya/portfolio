@@ -2,6 +2,16 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.3.0] - 2026-08-08
+
+### Added
+- **17 Production Projects**: Scanned `C:\Users\Admin\Desktop\Projects` recursively (following shortcuts to `D:\Antigravity-Projects`, `D:\youtube-projects`, `E:\hdd-data\Projects`, and `E:\hdd-data\pulse-vector`) and updated `developerFolio/src/portfolio.js` with 17 projects, complete with tech stack badges, rich descriptions, and GitHub links.
+- **Automated `/update-portfolio` Trigger**: Created `.agent/skills/update-portfolio/SKILL.md` and script `update_portfolio.py` to automate future portfolio updates on command.
+- **Session Token & Version Tracking**: Created `docs/VERSION.md`, session-based token telemetry in `logs/session_token_telemetry.md`, and session summary logs under `logs/`.
+
+### Changed
+- **Packup Workflow**: Enhanced packup command to update logs, sync docs under `docs/`, track version and tokens, generate session summaries, and execute Git add, commit, and push automatically.
+
 ---
 
 ## [1.2.0] - 2026-07-31
