@@ -12,4 +12,6 @@ Use this routing table to trigger domain-specific skills located in `.agent/skil
 | `logs/**`, execution logs, compile/build errors, telemetry | Logging & Telemetry | [.agent/skills/logging-telemetry/SKILL.md](file:///.agent/skills/logging-telemetry/SKILL.md) |
 | `docs/**`, `URL_TRACKER.md`, "packup", Git workflow | Documentation & Packup | [.agent/skills/documentation-packup/SKILL.md](file:///.agent/skills/documentation-packup/SKILL.md) |
 | `/update-portfolio`, update portfolio, scan projects | Portfolio Updater | [.agent/skills/update-portfolio/SKILL.md](file:///.agent/skills/update-portfolio/SKILL.md) |
+| token usage, token optimization, token tracking, model tokens | Token Optimization | [.agent/skills/token-optimization/SKILL.md](file:///.agent/skills/token-optimization/SKILL.md) |
+
 
