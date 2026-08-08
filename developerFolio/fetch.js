@@ -28,6 +28,96 @@ const fetchGithub = () => {
   return new Promise((resolve, reject) => {
     if (USE_GITHUB_DATA !== "true") {
       logger.info("GitHub data fetch is disabled (USE_GITHUB_DATA is not true).");
+      if (!fs.existsSync("./public/profile.json")) {
+        const fallback = {
+          data: {
+            user: {
+              name: "Aditya Tiwari",
+              bio: "AI / ML Engineer & MLOps Specialist",
+              avatarUrl: "https://avatars.githubusercontent.com/u/tiwari17aditya",
+              location: "Navi Mumbai, India",
+              pinnedItems: {
+                totalCount: 6,
+                edges: [
+                  {
+                    node: {
+                      id: "1",
+                      name: "VitalsGuard-Health-Medication-Tracker",
+                      description: "A production-ready health tracking SPA + PWA app with Supabase cloud and LocalStorage dual-storage resilience.",
+                      forkCount: 2,
+                      stargazers: {totalCount: 5},
+                      url: "https://github.com/tiwari17aditya/VitalsGuard-Health-Medication-Tracker",
+                      diskUsage: 1200,
+                      primaryLanguage: {name: "TypeScript", color: "#3178c6"}
+                    }
+                  },
+                  {
+                    node: {
+                      id: "2",
+                      name: "mahabharata-series-yt-animated",
+                      description: "An automated multi-platform video production system featuring AI-powered script generation and Remotion dynamic rendering.",
+                      forkCount: 3,
+                      stargazers: {totalCount: 8},
+                      url: "https://github.com/tiwari17aditya/mahabharata-series-yt-animated",
+                      diskUsage: 3400,
+                      primaryLanguage: {name: "Python", color: "#3572A5"}
+                    }
+                  },
+                  {
+                    node: {
+                      id: "3",
+                      name: "stocks_insights_agent",
+                      description: "Agentic AI stock insights generator performing multi-agent reasoning, transcript fetching, and automated daily email reports.",
+                      forkCount: 4,
+                      stargazers: {totalCount: 12},
+                      url: "https://github.com/tiwari17aditya/stocks_insights_agent",
+                      diskUsage: 1500,
+                      primaryLanguage: {name: "Python", color: "#3572A5"}
+                    }
+                  },
+                  {
+                    node: {
+                      id: "4",
+                      name: "pulsevector",
+                      description: "Intelligent automated content production engine featuring CAD-based scheduling with Gemini API and Supabase Storage.",
+                      forkCount: 1,
+                      stargazers: {totalCount: 6},
+                      url: "https://github.com/tiwari17aditya/pulsevector",
+                      diskUsage: 2100,
+                      primaryLanguage: {name: "Python", color: "#3572A5"}
+                    }
+                  },
+                  {
+                    node: {
+                      id: "5",
+                      name: "Antigravity-daily-CA-Insights",
+                      description: "Cloud-native agentic system running on GitHub Actions that fetches YouTube transcripts and generates current affairs insights.",
+                      forkCount: 2,
+                      stargazers: {totalCount: 7},
+                      url: "https://github.com/tiwari17aditya/Antigravity-daily-CA-Insights",
+                      diskUsage: 980,
+                      primaryLanguage: {name: "Python", color: "#3572A5"}
+                    }
+                  },
+                  {
+                    node: {
+                      id: "6",
+                      name: "vibrant-music-academy",
+                      description: "Modern high-performance web application & interactive music academy platform for Vibrant Music Academy.",
+                      forkCount: 1,
+                      stargazers: {totalCount: 4},
+                      url: "https://github.com/tiwari17aditya/vibrant-music-academy",
+                      diskUsage: 1800,
+                      primaryLanguage: {name: "JavaScript", color: "#f1e05a"}
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        };
+        fs.writeFileSync("./public/profile.json", JSON.stringify(fallback, null, 2), "utf8");
+      }
       return resolve();
     }
 

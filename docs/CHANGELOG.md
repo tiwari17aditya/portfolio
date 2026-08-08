@@ -2,6 +2,14 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.3.2] - 2026-08-08
+
+### Fixed
+- **Header Navigation**: Added missing `Projects` link (`#projects`) in `Header.js` navbar.
+- **Projects Section Visibility**: Enabled `openSource.display = true` and generated fallback `public/profile.json` in `fetch.js` so all 17 projects render seamlessly without missing data crashes.
+
+---
+
 ## [1.3.1] - 2026-08-08
 
 ### Added
