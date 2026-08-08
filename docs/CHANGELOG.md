@@ -2,6 +2,13 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.3.3] - 2026-08-08
+
+### Changed
+- **Projects Layout Optimization**: Preserved the original clean portfolio project structure by displaying top 5 featured cards initially, with an interactive "More Projects (12 More)" toggle button to reveal all 17 projects with identical card formatting.
+
+---
+
 ## [1.3.2] - 2026-08-08
 
 ### Fixed

@@ -149,3 +149,42 @@
     transform: translateY(-1px);
   }
 }
+
+/* More Projects Toggle Button */
+.more-projects-btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.more-projects-btn {
+  background: linear-gradient(135deg, #55198b, #8c43ce);
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(85, 25, 139, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(135deg, #6b21ad, #a052ea);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(85, 25, 139, 0.45);
+  }
+}
+
+.dark-mode-more-btn {
+  background: linear-gradient(135deg, #8c43ce, #a052ea);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(140, 67, 206, 0.4);
+
+  &:hover {
+    background: linear-gradient(135deg, #a052ea, #b86eff);
+    box-shadow: 0 6px 22px rgba(160, 82, 234, 0.6);
+  }
+}
+
