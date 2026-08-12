@@ -1,12 +1,21 @@
 # Version Tracking
 
-Current Project Version: **v1.5.5**  
+Current Project Version: **v1.5.7**  
 Release Date: **2026-08-12**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ---
 
 ## Release History
+
+### v1.5.7 (2026-08-12)
+- **Vercel Asset Path Fix**: Changed `homepage` in `package.json` from the GitHub Pages URL to `/` so CRA builds root-relative asset paths. This fixes the profile photo, fonts, and all JS/CSS chunks being 404 on Vercel.
+- **Simplified `vercel.json`**: Removed redundant `PUBLIC_URL` override from build command.
+
+### v1.5.6 (2026-08-12)
+- **Service Worker Fix**: Reverted `serviceWorker.register()` to `unregister()` — no service-worker.js served on Vercel root scope, causing a 404 on every page load.
+- **Blogs.json Fix**: Set `displayMediumBlogs: false` to prevent 404 fetch to `/blogs.json` (no Medium feed configured). Added null-guard in `Blogs.js` to prevent TypeError crash on undefined response.
+- **Font Format Fix**: Corrected Montserrat `@font-face` format from `"woff"` to `"truetype"` for the `.ttf` file.
 
 ### v1.5.5 (2026-08-12)
 - **Certifications Pruning**: Kept only the 4 primary specialization certificates (ML, GenAI Fundamentals, Linux Bash, and Python for Everybody Specialization). Removed individual course certificates.

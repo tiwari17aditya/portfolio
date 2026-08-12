@@ -2,6 +2,23 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.5.7] - 2026-08-12
+
+### Fixed
+- **Vercel Asset Path (Root Cause)**: Changed `homepage` in `package.json` from `https://tiwari17aditya.github.io/portfolio` to `/`. CRA was baking `/portfolio/` into all asset paths at build time; Vercel serves from root `/` so photo, fonts, JS and CSS all silently 404d.
+- **`vercel.json` cleanup**: Simplified build command, removing the now-redundant `PUBLIC_URL=/` override.
+
+---
+
+## [1.5.6] - 2026-08-12
+
+### Fixed
+- **Service Worker 404**: Reverted `serviceWorker.register()` to `unregister()` in `index.js`. Vercel does not serve a `service-worker.js` at root scope.
+- **`/blogs.json` 404 + TypeError crash**: Set `displayMediumBlogs: "false"` in `portfolio.js` (no Medium feed configured). Added null-guard in `Blogs.js` so a non-ok fetch response no longer crashes with `TypeError: Cannot read properties of undefined (reading 'items')`.
+- **Montserrat font format**: Corrected `@font-face` format hint from `"woff"` to `"truetype"` for the `.ttf` font file.
+
+---
+
 ## [1.5.5] - 2026-08-12
 
 ### Removed

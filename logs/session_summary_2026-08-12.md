@@ -2,7 +2,7 @@
 
 ## Session Overview
 - **Date**: 2026-08-12
-- **Session Focus**: Resume Updates, Personalization, Custom Logo Assets Integration, and Section Pruning
+- **Session Focus**: Resume Updates, Personalization, Custom Logo Assets Integration, Section Pruning, Console Error Fixes, and Vercel Asset Path Fix
 
 ---
 
@@ -10,37 +10,49 @@
 
 1. **Resume Replacement**:
    - Replaced default sample resume at [resume.pdf](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/containers/greeting/resume.pdf) with the actual resume `Resume_Adityatiwari.pdf` from the workspace root.
-   - Confirmed the download logic works seamlessly.
 
 2. **Personalized Portfolio Configuration ([portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js))**:
-   - **Profile Description**: Aligned the greeting subtitle description with your actual ML & Platform Engineering experience summary.
-   - **Education details**: Updated the Jabalpur BTech duration and result with your **8.35 CGPA**.
-   - **Jio Platforms Experience**: Updated your role to **Data Scientist** and integrated the 7 detail-oriented bullets from your resume.
-   - **Skills List**: Expanded the technical skills section with **FastAPI, SQL, GitLab, Streamlit, Grafana, Prometheus, LangGraph, Pandas, and NumPy**.
-   - **Specializations & Certifications**: Replaced placeholder accomplishments with Stanford Online/DeepLearning.AI ML Specialization, DeepLearning.AI GenAI Specialization, Michigan Python Specialization, IBM Generative AI Fundamentals Specialization, and EDUCBA Linux Bash Scripting Specialization. Added verify links and view PDF capability.
-   - **Pruning Placeholders**: Disabled the placeholder Blogs, Talks, Podcasts, duplicate Open Source list, and Twitter timelines in configuration to keep your website clean.
+   - **Profile Description**: Aligned the greeting subtitle with actual ML & Platform Engineering experience summary.
+   - **Education details**: Updated BTech duration and result with **8.35 CGPA**.
+   - **Jio Platforms Experience**: Updated role to **Data Scientist** with 7 detailed resume bullets.
+   - **Skills List**: Expanded with FastAPI, SQL, GitLab, Streamlit, Grafana, Prometheus, LangGraph, Pandas, NumPy.
+   - **Certifications**: Added 4 specialization certificates with verify links and local PDF views.
+   - **Pruning Placeholders**: Disabled Blogs, Talks, Podcasts, Open Source duplicate, and Twitter sections.
 
 3. **Logo & Asset Integration**:
-   - Copied new user-provided [college-logo.png](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/assets/images/college-logo.png) and [school-logo.png](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/assets/images/school-logo.png) to replace default placeholders.
-   - Copied three PDF certificate files into `assets/certs/` and renamed them.
-   - Generated customized logo png assets for IBM, EDUCBA, DeepLearning.AI, and Michigan certifications.
+   - Copied new user-provided [college-logo.png](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/assets/images/college-logo.png) and [school-logo.png](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/assets/images/school-logo.png).
+   - Copied PDF certificate files into `assets/certs/` and generated logo PNGs for IBM, EDUCBA, DeepLearning.AI, Michigan.
    - Cleaned up root directory by deleting raw certificate files.
 
-4. **Proficiency Section Cards Redesign**:
-   - Replaced progress bar gauges with a grid of 7 interactive cards, removing all percentage metrics.
-   - Implemented 7 distinct style prototypes for each card (Glassmorphism, Gradient Border, Neumorphism, Glowing Shadow, Slide-Up Fill, Cyberpunk Grid, and Pulse Glow) to offer a diverse gallery of aesthetics.
-   - Wired up font icons representing each technology stack.
+4. **Profile Photo Integration**:
+   - Copied `photo.jpg` to `developerFolio/src/assets/images/` and wired it into [Greeting.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/containers/greeting/Greeting.js).
+   - Styled with soft-rounded square frame (`border-radius: 24px`, `height: auto`) in [Greeting.scss](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/containers/greeting/Greeting.scss).
 
-5. **PWA Mobile Accessibility**:
-   - Registered the Service Worker in `index.js` to enable background caching, offline launching, and browser install options.
+5. **Certifications Pruning (v1.5.5)**:
+   - Removed 3 individual University of Michigan course certs and the unlinked GenAI LLM card.
+   - Deleted associated PDF files from `assets/certs/`.
+   - Retained 4 primary specializations: Machine Learning, GenAI Fundamentals, Linux Bash, Python for Everybody.
 
-6. **Footer Personalization ([Footer.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/components/footer/Footer.js))**:
-   - Personalized copyright message to `© 2026 Aditya Tiwari. Built with React.` and acknowledged `developerFolio` as the template foundation.
+6. **Vercel Console Error Fixes (v1.5.6)**:
+   - Reverted `serviceWorker.register()` → `serviceWorker.unregister()` in [index.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/index.js) — no `service-worker.js` served at Vercel root.
+   - Set `displayMediumBlogs: "false"` in [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) — no Medium feed, `/blogs.json` was 404ing.
+   - Added null-guard in [Blogs.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/containers/blogs/Blogs.js) to prevent `TypeError: Cannot read properties of undefined (reading 'items')`.
+   - Fixed Montserrat font format string from `"woff"` → `"truetype"` in [index.css](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/index.css).
 
-7. **Release & Documentation Updates**:
-   - Incremented version to `v1.5.5` in [VERSION.md](file:///e:/hdd-data/Projects/portfolio-website/docs/VERSION.md).
-   - Added v1.5.0 through v1.5.5 highlights in [CHANGELOG.md](file:///e:/hdd-data/Projects/portfolio-website/docs/CHANGELOG.md).
-   - Cleaned up link cataloging in [URL_TRACKER.md](file:///e:/hdd-data/Projects/portfolio-website/docs/URL_TRACKER.md).
+7. **Vercel Asset Path Fix — Photo & Fonts (v1.5.7)**:
+   - **Root Cause Identified**: `homepage: "https://tiwari17aditya.github.io/portfolio"` in [package.json](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/package.json) caused CRA to bake `/portfolio/` into ALL asset paths at build time. Vercel serves from `/` so photo, fonts, JS chunks all 404d silently.
+   - **Fix**: Changed `homepage` to `/` in `package.json` and simplified [vercel.json](file:///e:/hdd-data/Projects/portfolio-website/vercel.json) build command.
+   - Build now reports: *"The project was built assuming it is hosted at `/`"* — all asset paths are root-relative.
 
-8. **Build Verification**:
-   - Executed local compilation `npm.cmd run build` which succeeded cleanly.
+8. **Proficiency Section Cards Redesign**:
+   - Replaced progress bar gauges with a grid of 7 interactive styled cards (Glassmorphism, Gradient Border, Neumorphism, Glowing Shadow, Slide-Up Fill, Cyberpunk Grid, and Pulse Glow).
+   - Renamed section from "Proficiency" to "Technical Skills".
+
+9. **Release & Documentation Updates**:
+   - Versions incremented through v1.5.0 → v1.5.7 in [VERSION.md](file:///e:/hdd-data/Projects/portfolio-website/docs/VERSION.md).
+   - Full changelog in [CHANGELOG.md](file:///e:/hdd-data/Projects/portfolio-website/docs/CHANGELOG.md).
+   - Link catalog in [URL_TRACKER.md](file:///e:/hdd-data/Projects/portfolio-website/docs/URL_TRACKER.md).
+
+10. **Build Verification**:
+    - All compilations succeeded cleanly with `npm run build`.
+    - Git working tree is clean after all pushes.
