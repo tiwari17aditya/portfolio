@@ -1,12 +1,16 @@
 # Version Tracking
 
-Current Project Version: **v1.5.2**  
+Current Project Version: **v1.5.3**  
 Release Date: **2026-08-12**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ---
 
 ## Release History
+
+### v1.5.3 (2026-08-12)
+- **Proficiency Card Showcase Grid**: Replaced progress bars with interactive card layout, demonstrating 7 styles (Glassmorphism, Gradient Border, Neumorphism, Glow, Slide-Up, Cyberpunk Grid, and Pulse Glow).
+- **Service Worker PWA Registration**: Registered the service worker in React index, enabling offline precaching and PWA installation for mobile browsers.
 
 ### v1.5.2 (2026-08-12)
 - **Interactive Proficiency Section**: Redesigned the skill progress meters with rounded gradient bars, load slide-in animations, glassmorphism background tracks, and responsive hover-glow translation transitions.

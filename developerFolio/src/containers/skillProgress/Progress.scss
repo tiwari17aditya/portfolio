@@ -27,7 +27,7 @@
 }
 
 .skills-bar {
-  width: 50%;
+  width: 60%;
   padding-right: 20px;
 }
 
@@ -43,96 +43,269 @@
   height: auto;
 }
 
-// Sleek Progress Bars Redesign
-.skill-item {
-  margin-bottom: 25px;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  cursor: pointer;
-  padding: 5px 0;
-  
-  &:hover {
-    transform: translateX(8px);
-    
-    .skill-name {
-      color: $skillsColor;
-    }
-    
-    .skill-percentage {
-      transform: scale(1.1);
-      color: lighten($skillsColor, 10%);
-    }
-    
-    .skill-progress {
-      box-shadow: 0 0 15px rgba(100, 91, 235, 0.7);
-      background: linear-gradient(90deg, lighten(#645beb, 10%) 0%, lighten(#a8a3ff, 10%) 100%);
-    }
-  }
+// Responsive Skills Card Grid
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+  width: 100%;
 }
 
-.skill-info {
+// Core Card Base
+.skill-card {
+  height: 120px;
+  border-radius: 16px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-sizing: border-box;
 }
 
-.skill-name {
-  font-size: 18px;
-  font-weight: 600;
+.skill-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.skill-card-icon-div {
+  font-size: 32px;
+  transition: all 0.3s ease;
+}
+
+.skill-card-title {
   font-family: "Inter", "Outfit", sans-serif;
-  color: $textColor;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  font-size: 14px;
+  color: $titleColor;
+  transition: all 0.3s ease;
   
   .dark-mode & {
     color: $textColorDark;
   }
 }
 
-.skill-percentage {
-  font-size: 16px;
-  font-weight: 700;
-  font-family: "Inter", "Outfit", sans-serif;
-  color: $skillsColor;
-  transition: all 0.3s ease;
-}
+// ==========================================
+// 1. DOCKER - GLASSMORPHISM CARD (card-glass)
+// ==========================================
+.card-glass {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 
-.skill-meter-container {
-  width: 100%;
-}
-
-.skill-meter {
-  height: 8px;
-  position: relative;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 50px;
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.03);
-  backdrop-filter: blur(5px);
-  
   .dark-mode & {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .skill-card-icon {
+    color: #2496ed; // Docker Blue
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.65);
+    border-color: rgba(36, 150, 237, 0.5);
+    box-shadow: 0 10px 25px rgba(36, 150, 237, 0.2);
+    
+    .dark-mode & {
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 25px rgba(36, 150, 237, 0.3);
+    }
+  }
+}
+
+// ==========================================
+// 2. PYTHON - GRADIENT BORDER (card-gradient-border)
+// ==========================================
+.card-gradient-border {
+  border: 2px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box, 
+              linear-gradient(135deg, #3776ab, #ffd343) border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+  .dark-mode & {
+    background: linear-gradient(#171c28, #171c28) padding-box, 
+                linear-gradient(135deg, #3776ab, #ffd343) border-box;
+  }
+
+  .skill-card-icon {
+    color: #3776ab; // Python Blue
+  }
+
+  &:hover {
+    transform: translateY(-5px) scale(1.02);
+    background: linear-gradient(#ffffff, #ffffff) padding-box, 
+                linear-gradient(225deg, #3776ab, #ffd343) border-box;
+    box-shadow: 0 8px 25px rgba(55, 118, 171, 0.25);
+    
+    .dark-mode & {
+      background: linear-gradient(#171c28, #171c28) padding-box, 
+                  linear-gradient(225deg, #3776ab, #ffd343) border-box;
+      box-shadow: 0 8px 25px rgba(255, 211, 67, 0.2);
+    }
+  }
+}
+
+// ==========================================
+// 3. KUBERNETES - NEUMORPHIC CARD (card-neumorphic)
+// ==========================================
+.card-neumorphic {
+  background: #f5f2f4;
+  box-shadow: 5px 5px 10px #e0dcdf, 
+              -5px -5px 10px #ffffff;
+
+  .dark-mode & {
+    background: #1b202d;
+    box-shadow: 5px 5px 10px #12151f, 
+                -5px -5px 10px #242b3b;
+  }
+
+  .skill-card-icon {
+    color: #326ce5; // Kubernetes Blue
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: inset 3px 3px 6px #e0dcdf, 
+                inset -3px -3px 6px #ffffff;
+                
+    .dark-mode & {
+      box-shadow: inset 3px 3px 6px #12151f, 
+                  inset -3px -3px 6px #242b3b;
+    }
+  }
+}
+
+// ==========================================
+// 4. AIRFLOW - GLOWING SHADOW CARD (card-glowing)
+// ==========================================
+.card-glowing {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+
+  .dark-mode & {
+    background: #171c28;
     border-color: rgba(255, 255, 255, 0.05);
   }
-}
 
-.skill-progress {
-  display: block;
-  height: 100%;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #645beb 0%, #a8a3ff 100%);
-  box-shadow: 0 0 8px rgba(100, 91, 235, 0.3);
-  transition: all 0.3s ease;
-  transform-origin: left;
-  animation: slideIn 1.5s cubic-bezier(0.1, 1, 0.1, 1) forwards;
-}
-
-/* Keyframes for GPU-accelerated load animation */
-@keyframes slideIn {
-  from {
-    transform: scaleX(0);
+  .skill-card-icon {
+    color: #017a86; // Airflow Teal
   }
-  to {
-    transform: scaleX(1);
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: rgba(1, 122, 134, 0.5);
+    box-shadow: 0 0 20px rgba(1, 122, 134, 0.4);
+    
+    .dark-mode & {
+      box-shadow: 0 0 25px rgba(1, 122, 134, 0.6);
+    }
+  }
+}
+
+// ==========================================
+// 5. MLOPS - MINIMAL SLIDE-UP FILL (card-slide-up)
+// ==========================================
+.card-slide-up {
+  border: 2px solid $skillsColor;
+  background: linear-gradient(to top, $skillsColor 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+
+  .skill-card-icon {
+    color: $skillsColor;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    background-position: bottom;
+    box-shadow: 0 8px 25px rgba(100, 91, 235, 0.3);
+    
+    .skill-card-icon {
+      color: #ffffff;
+    }
+    
+    .skill-card-title {
+      color: #ffffff;
+    }
+  }
+}
+
+// ==========================================
+// 6. AI - CYBER GRID TECH CARD (card-cyber)
+// ==========================================
+.card-cyber {
+  border-radius: 0px; // Cyberpunk sharp edge
+  border: 1px solid #00ffff;
+  background: linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+              linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 6px 6px;
+  
+  .skill-card-icon {
+    color: #00ffff;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+  }
+
+  .skill-card-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #00ffff;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 255, 255, 0.08);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  }
+}
+
+// ==========================================
+// 7. AGENTIC AI - COLOR PULSE GLOW (card-pulse-gradient)
+// ==========================================
+.card-pulse-gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box, 
+              linear-gradient(to right, #645beb, #f43f5e) border-box;
+
+  .dark-mode & {
+    background: linear-gradient(#171c28, #171c28) padding-box, 
+                linear-gradient(to right, #645beb, #f43f5e) border-box;
+  }
+
+  .skill-card-icon {
+    color: #f43f5e;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    animation: breathingGlow 2s infinite alternate;
+  }
+}
+
+@keyframes breathingGlow {
+  0% {
+    box-shadow: 0 0 8px rgba(244, 63, 94, 0.3), 0 0 3px rgba(100, 91, 235, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(244, 63, 94, 0.6), 0 0 15px rgba(100, 91, 235, 0.5);
   }
 }
 

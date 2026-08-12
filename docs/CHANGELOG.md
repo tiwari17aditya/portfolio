@@ -2,6 +2,16 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.5.3] - 2026-08-12
+
+### Added
+- **PWA offline support**: Registered the React Service Worker to make the portfolio installable and offline-accessible on mobile browsers.
+
+### Changed
+- **Proficiency Card Showcase Grid**: Replaced progress bar gauges with a grid of 7 interactive cards, each demonstrating a different styling technique (Glassmorphism, Gradient Border, Neumorphism, Glow, Slide-Up, Cyberpunk Grid, and Pulse Glow).
+
+---
+
 ## [1.5.2] - 2026-08-12
 
 ### Changed
