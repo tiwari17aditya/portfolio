@@ -1,54 +1,143 @@
 @import "../../_globalColor";
 
-.meter {
-  height: 20px;
-  position: relative;
-  background: $progressBarBackground;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  border-radius: 25px;
-}
-.meter > span {
-  display: block;
-  height: 100%;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: $progressBarSpanBG;
-  position: relative;
-  overflow: hidden;
-}
-.skill {
-  line-height: 3.5vw;
-}
-.skill-bars {
-  font-size: 28px;
-  width: 40%;
-}
 .skills-container {
   display: flex;
   width: 90%;
-  padding: 20px 10px;
+  padding: 40px 10px;
   margin: 0px auto;
   margin-top: 2rem;
+  align-items: center;
 }
+
 .skills-container > * {
   flex: 1;
   margin-bottom: 30px;
 }
+
+.skills-heading {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Inter", "Outfit", sans-serif;
+  margin-bottom: 30px;
+  color: $titleColor;
+  
+  .dark-mode & {
+    color: $textColorDark;
+  }
+}
+
+.skills-bar {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.skills-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .skills-image > img {
   margin-left: 80px;
   max-width: 90%;
   height: auto;
 }
 
-/* Media Query */
-
-@media (max-width: 1456px) {
-  .skills-bar {
-    line-height: 4rem;
+// Sleek Progress Bars Redesign
+.skill-item {
+  margin-bottom: 25px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  padding: 5px 0;
+  
+  &:hover {
+    transform: translateX(8px);
+    
+    .skill-name {
+      color: $skillsColor;
+    }
+    
+    .skill-percentage {
+      transform: scale(1.1);
+      color: lighten($skillsColor, 10%);
+    }
+    
+    .skill-progress {
+      box-shadow: 0 0 15px rgba(100, 91, 235, 0.7);
+      background: linear-gradient(90deg, lighten(#645beb, 10%) 0%, lighten(#a8a3ff, 10%) 100%);
+    }
   }
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Inter", "Outfit", sans-serif;
+  color: $textColor;
+  transition: color 0.3s ease;
+  
+  .dark-mode & {
+    color: $textColorDark;
+  }
+}
+
+.skill-percentage {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", "Outfit", sans-serif;
+  color: $skillsColor;
+  transition: all 0.3s ease;
+}
+
+.skill-meter-container {
+  width: 100%;
+}
+
+.skill-meter {
+  height: 8px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(5px);
+  
+  .dark-mode & {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.skill-progress {
+  display: block;
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #645beb 0%, #a8a3ff 100%);
+  box-shadow: 0 0 8px rgba(100, 91, 235, 0.3);
+  transition: all 0.3s ease;
+  transform-origin: left;
+  animation: slideIn 1.5s cubic-bezier(0.1, 1, 0.1, 1) forwards;
+}
+
+/* Keyframes for GPU-accelerated load animation */
+@keyframes slideIn {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Media Query */
+@media (max-width: 1456px) {
   .skills-image {
     display: none;
     order: 2;
@@ -60,7 +149,8 @@
     flex-direction: column;
   }
   .skills-bar {
-    line-height: 3rem;
+    width: 100%;
+    padding-right: 0;
     margin: 20px;
   }
   .skills-image {

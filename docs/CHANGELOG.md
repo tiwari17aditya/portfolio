@@ -2,6 +2,13 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.5.2] - 2026-08-12
+
+### Changed
+- **Proficiency Section Redesign**: Transformed static progress bars into rounded gradient meters (`#645beb` to `#a8a3ff`) with glassmorphism tracks. Added GPU-accelerated load animations and hover glow/translation micro-interactions.
+
+---
+
 ## [1.5.1] - 2026-08-12
 
 ### Added

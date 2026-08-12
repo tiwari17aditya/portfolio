@@ -1,12 +1,15 @@
 # Version Tracking
 
-Current Project Version: **v1.5.1**  
+Current Project Version: **v1.5.2**  
 Release Date: **2026-08-12**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ---
 
 ## Release History
+
+### v1.5.2 (2026-08-12)
+- **Interactive Proficiency Section**: Redesigned the skill progress meters with rounded gradient bars, load slide-in animations, glassmorphism background tracks, and responsive hover-glow translation transitions.
 
 ### v1.5.1 (2026-08-12)
 - **Coursera Certificates & Links**: Added verification links and local PDF files for Machine Learning, Generative AI Fundamentals, and Linux Bash Scripting specializations.

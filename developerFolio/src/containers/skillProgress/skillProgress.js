@@ -17,10 +17,15 @@ export default function StackProgress() {
                 width: exp.progressPercentage
               };
               return (
-                <div key={i} className="skill">
-                  <p>{exp.Stack}</p>
-                  <div className="meter">
-                    <span style={progressStyle}></span>
+                <div key={i} className="skill-item">
+                  <div className="skill-info">
+                    <span className="skill-name">{exp.Stack}</span>
+                    <span className="skill-percentage">{exp.progressPercentage}</span>
+                  </div>
+                  <div className="skill-meter-container">
+                    <div className="skill-meter">
+                      <span className="skill-progress" style={progressStyle}></span>
+                    </div>
                   </div>
                 </div>
               );
