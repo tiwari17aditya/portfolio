@@ -2,6 +2,16 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.5.5] - 2026-08-12
+
+### Removed
+- **Pruned Certifications**: Removed the three individual Python course certificates and the unlinked GenAI card. Deleted their local PDF files.
+
+### Changed
+- **Greeting Photo Layout**: Changed profile image border radius from a circle (`50%`) to a soft-rounded square (`24px`) with dynamic height. This preserves original aspect ratio and prevents body/head cropping.
+
+---
+
 ## [1.5.4] - 2026-08-12
 
 ### Added

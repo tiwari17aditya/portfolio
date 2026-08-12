@@ -1,12 +1,16 @@
 # Version Tracking
 
-Current Project Version: **v1.5.4**  
+Current Project Version: **v1.5.5**  
 Release Date: **2026-08-12**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ---
 
 ## Release History
+
+### v1.5.5 (2026-08-12)
+- **Certifications Pruning**: Kept only the 4 primary specialization certificates (ML, GenAI Fundamentals, Linux Bash, and Python for Everybody Specialization). Removed individual course certificates.
+- **Greeting Photo Aspect Ratio**: Altered profile image styles to use a soft-rounded square border (`border-radius: 24px` and dynamic height) to show the full upper body without cropping.
 
 ### v1.5.4 (2026-08-12)
 - **Profile Photo Integration**: Replaced vector illustrations in the greeting section with a personal profile photo card avatar.

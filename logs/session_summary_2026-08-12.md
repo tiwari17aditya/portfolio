@@ -38,8 +38,8 @@
    - Personalized copyright message to `© 2026 Aditya Tiwari. Built with React.` and acknowledged `developerFolio` as the template foundation.
 
 7. **Release & Documentation Updates**:
-   - Incremented version to `v1.5.4` in [VERSION.md](file:///e:/hdd-data/Projects/portfolio-website/docs/VERSION.md).
-   - Added v1.5.0 through v1.5.4 highlights in [CHANGELOG.md](file:///e:/hdd-data/Projects/portfolio-website/docs/CHANGELOG.md).
+   - Incremented version to `v1.5.5` in [VERSION.md](file:///e:/hdd-data/Projects/portfolio-website/docs/VERSION.md).
+   - Added v1.5.0 through v1.5.5 highlights in [CHANGELOG.md](file:///e:/hdd-data/Projects/portfolio-website/docs/CHANGELOG.md).
    - Cleaned up link cataloging in [URL_TRACKER.md](file:///e:/hdd-data/Projects/portfolio-website/docs/URL_TRACKER.md).
 
 8. **Build Verification**:
