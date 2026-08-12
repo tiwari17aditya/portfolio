@@ -472,7 +472,48 @@ const achievementSection = {
       subtitle: "Stanford Online / DeepLearning.AI (2025)",
       image: require("./assets/images/stanfordLogo.png"),
       imageAlt: "Stanford Online / DeepLearning.AI Logo",
-      footerLink: []
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://coursera.org/share/de22acdb045cda8dc07bd808ce609f49"
+        },
+        {
+          name: "View PDF",
+          url: require("./assets/certs/Coursera_SYGNJQH6UIWB.pdf")
+        }
+      ]
+    },
+    {
+      title: "Generative AI Fundamentals Specialization",
+      subtitle: "IBM (2025)",
+      image: require("./assets/images/ibm_logo.png"),
+      imageAlt: "IBM Logo",
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://coursera.org/share/fc139b1619d67a4a645ce39c22f34331"
+        },
+        {
+          name: "View PDF",
+          url: require("./assets/certs/Coursera_HWPQ9YAMLOG3.pdf")
+        }
+      ]
+    },
+    {
+      title: "Linux Bash Scripting & Shell Programming Specialization",
+      subtitle: "EDUCBA (2026)",
+      image: require("./assets/images/educba_logo.png"),
+      imageAlt: "EDUCBA Logo",
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://coursera.org/share/b9c3a93bb82b489e29b8ccb4939ef358"
+        },
+        {
+          name: "View PDF",
+          url: require("./assets/certs/Coursera_G9J12KFZASDS.pdf")
+        }
+      ]
     },
     {
       title: "Generative AI with Large Language Models Specialization",

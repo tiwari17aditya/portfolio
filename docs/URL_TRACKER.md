@@ -21,6 +21,9 @@ This document catalogs all external URLs, links, social media addresses, endpoin
 | Resource | Target Path | Location |
 |---|---|---|
 | **Resume (Google Drive)** | `https://drive.google.com/file/d/1sr5eI5I_xwr2X3BE1bDm-_Gwwjx-yTnM/view?usp=sharing` | [portfolio.js:28](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js#L28) |
+| **Machine Learning Cert (Verify)** | `https://coursera.org/share/de22acdb045cda8dc07bd808ce609f49` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **GenAI Fundamentals Cert (Verify)** | `https://coursera.org/share/fc139b1619d67a4a645ce39c22f34331` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Linux Bash Scripting Cert (Verify)** | `https://coursera.org/share/b9c3a93bb82b489e29b8ccb4939ef358` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
 
 ---
 

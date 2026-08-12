@@ -2,6 +2,15 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.5.1] - 2026-08-12
+
+### Added
+- **Coursera Verification & View links**: Added verify links and local PDF file views for Machine Learning, Generative AI Fundamentals, and Linux Bash Scripting specializations.
+- **IBM & EDUCBA Logos**: Generated and integrated customized logo icons for IBM and EDUCBA certifications.
+- **Root cleanup**: Deleted temporary PDF certificates from the workspace root directory.
+
+---
+
 ## [1.5.0] - 2026-08-12
 
 ### Added
