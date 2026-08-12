@@ -469,7 +469,7 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Machine Learning Specialization",
-      subtitle: "Stanford Online / DeepLearning.AI (2025)",
+      subtitle: "Stanford Online / DeepLearning.AI | Provider: Coursera (2025)",
       image: require("./assets/images/stanfordLogo.png"),
       imageAlt: "Stanford Online / DeepLearning.AI Logo",
       footerLink: [
@@ -485,7 +485,7 @@ const achievementSection = {
     },
     {
       title: "Generative AI Fundamentals Specialization",
-      subtitle: "IBM (2025)",
+      subtitle: "IBM | Provider: Coursera (2025)",
       image: require("./assets/images/ibm_logo.png"),
       imageAlt: "IBM Logo",
       footerLink: [
@@ -501,7 +501,7 @@ const achievementSection = {
     },
     {
       title: "Linux Bash Scripting & Shell Programming Specialization",
-      subtitle: "EDUCBA (2026)",
+      subtitle: "EDUCBA | Provider: Coursera (2026)",
       image: require("./assets/images/educba_logo.png"),
       imageAlt: "EDUCBA Logo",
       footerLink: [
@@ -516,15 +516,63 @@ const achievementSection = {
       ]
     },
     {
+      title: "Using Python to Access Web Data",
+      subtitle: "University of Michigan | Provider: Coursera (2021)",
+      image: require("./assets/images/michigan_logo.png"),
+      imageAlt: "University of Michigan Logo",
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://coursera.org/share/6f9e19f5fdd47298c0a8bc787c08ccf0"
+        },
+        {
+          name: "View PDF",
+          url: require("./assets/certs/Coursera_373AQSF762XN.pdf")
+        }
+      ]
+    },
+    {
+      title: "Python Data Structures",
+      subtitle: "University of Michigan | Provider: Coursera (2021)",
+      image: require("./assets/images/michigan_logo.png"),
+      imageAlt: "University of Michigan Logo",
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://coursera.org/share/713e3751bdb27aed8f3b5fc9bd396b4a"
+        },
+        {
+          name: "View PDF",
+          url: require("./assets/certs/Coursera_DMBYL87UHQ22.pdf")
+        }
+      ]
+    },
+    {
+      title: "Programming for Everybody (Getting Started with Python)",
+      subtitle: "University of Michigan | Provider: Coursera (2021)",
+      image: require("./assets/images/michigan_logo.png"),
+      imageAlt: "University of Michigan Logo",
+      footerLink: [
+        {
+          name: "Verify Certificate",
+          url: "https://coursera.org/share/4ba0d546c1b2f6780092d3b33ccb83e7"
+        },
+        {
+          name: "View PDF",
+          url: require("./assets/certs/Coursera_5LXT73ADJK6M.pdf")
+        }
+      ]
+    },
+    {
       title: "Generative AI with Large Language Models Specialization",
-      subtitle: "DeepLearning.AI (2026)",
+      subtitle: "DeepLearning.AI | Provider: Coursera (2026)",
       image: require("./assets/images/deeplearning_ai_logo.png"),
       imageAlt: "DeepLearning.AI Logo",
       footerLink: []
     },
     {
       title: "Python for Everybody Specialization",
-      subtitle: "University of Michigan (2024)",
+      subtitle: "University of Michigan | Provider: Coursera (2024)",
       image: require("./assets/images/michigan_logo.png"),
       imageAlt: "University of Michigan Logo",
       footerLink: []

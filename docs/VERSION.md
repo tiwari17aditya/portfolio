@@ -1,12 +1,18 @@
 # Version Tracking
 
-Current Project Version: **v1.5.3**  
+Current Project Version: **v1.5.4**  
 Release Date: **2026-08-12**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ---
 
 ## Release History
+
+### v1.5.4 (2026-08-12)
+- **Profile Photo Integration**: Replaced vector illustrations in the greeting section with a personal profile photo card avatar.
+- **Skills Renaming**: Renamed the "Proficiency" section header to "Technical Skills".
+- **Three Python Course Certificates**: Added certificates for Using Python to Access Web Data, Python Data Structures, and Programming for Everybody, including verify links and local PDF views.
+- **Certificate Provider Annotations**: Appended `| Provider: Coursera` to all Coursera-issued certifications.
 
 ### v1.5.3 (2026-08-12)
 - **Proficiency Card Showcase Grid**: Replaced progress bars with interactive card layout, demonstrating 7 styles (Glassmorphism, Gradient Border, Neumorphism, Glow, Slide-Up, Cyberpunk Grid, and Pulse Glow).

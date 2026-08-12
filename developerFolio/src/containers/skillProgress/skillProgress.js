@@ -33,7 +33,7 @@ export default function StackProgress() {
       <Fade bottom duration={1000} distance="20px">
         <div className="skills-container">
           <div className="skills-bar">
-            <h1 className="skills-heading">Proficiency</h1>
+            <h1 className="skills-heading">Technical Skills</h1>
             <div className="skills-grid">
               {techStack.experience.map((exp, i) => {
                 const variant = cardVariants[i % cardVariants.length];

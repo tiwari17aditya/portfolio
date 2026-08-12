@@ -2,6 +2,18 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.5.4] - 2026-08-12
+
+### Added
+- **Greeting Profile Avatar**: Integrated user's profile photo (`photo.jpg`) with round borders, highlights, and tilt transition animations.
+- **Python Course Certificates**: Appended three new individual Python courses under University of Michigan, with local PDF views and verification links.
+- **Certificate Provider tagging**: Tagged all Coursera certificates with `| Provider: Coursera`.
+
+### Changed
+- **Renamed Proficiency Title**: Changed section title from "Proficiency" to "Technical Skills" in the component.
+
+---
+
 ## [1.5.3] - 2026-08-12
 
 ### Added

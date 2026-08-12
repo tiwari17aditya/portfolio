@@ -24,6 +24,9 @@ This document catalogs all external URLs, links, social media addresses, endpoin
 | **Machine Learning Cert (Verify)** | `https://coursera.org/share/de22acdb045cda8dc07bd808ce609f49` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
 | **GenAI Fundamentals Cert (Verify)** | `https://coursera.org/share/fc139b1619d67a4a645ce39c22f34331` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
 | **Linux Bash Scripting Cert (Verify)** | `https://coursera.org/share/b9c3a93bb82b489e29b8ccb4939ef358` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Using Python Web Data Cert (Verify)** | `https://coursera.org/share/6f9e19f5fdd47298c0a8bc787c08ccf0` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Python Data Structures Cert (Verify)** | `https://coursera.org/share/713e3751bdb27aed8f3b5fc9bd396b4a` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Programming with Python Cert (Verify)** | `https://coursera.org/share/4ba0d546c1b2f6780092d3b33ccb83e7` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
 
 ---
 
