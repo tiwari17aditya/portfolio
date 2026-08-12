@@ -29,9 +29,15 @@ export default function Blogs() {
             if (result.ok) {
               return result.json();
             }
+            throw new Error("blogs.json not available");
           })
           .then(response => {
-            setMediumBlogsFunction(response.items);
+            if (response && response.items) {
+              setMediumBlogsFunction(response.items);
+            } else {
+              setMediumBlogsFunction("Error");
+              blogSection.displayMediumBlogs = "false";
+            }
           })
           .catch(function (error) {
             console.error(
