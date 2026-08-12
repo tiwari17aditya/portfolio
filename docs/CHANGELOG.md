@@ -2,6 +2,20 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.5.0] - 2026-08-12
+
+### Added
+- **Resume and Credentials Integration**: Replaced default template resume with candidate's actual resume (`Resume_Adityatiwari.pdf`).
+- **Education Logos**: Overwrote template logos with custom school and college logo png files.
+- **Customized Certifications**: Replaced template achievements with Stanford and University of Michigan specializations, including generated custom logo graphics.
+- **Enhanced Profile & Skills**: Updated the greeting subTitle, skills lists, education results (with **8.35 CGPA**), and Jio Platforms experience details.
+
+### Changed
+- **Footer Copyright & Credits**: Customized copyright details to the candidate and added clean template foundation credits.
+- **Hiding Placeholder Sections**: Turned off Blog, Talks, Podcasts, Open Source repository list, and Twitter timelines in config.
+
+---
+
 ## [1.4.0] - 2026-08-08
 
 ### Added

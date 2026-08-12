@@ -50,3 +50,25 @@ The following specific tasks are scheduled for implementation in Version 1.2.0:
 
 ### 4. Track Versioning in a Unified File
 * **Scope**: Maintain project releases, build tags, and semver tracking in a single centralized documentation file (`docs/VERSION.md`) to prevent version drift between `package.json` and other metadata components.
+
+### 5. Next Session Immediate Action Items
+* **Skills Section Overhaul**:
+  - Update and replace all existing skills in `portfolio.js` purely based on technical skills extracted from all added workspace projects.
+* **Education Section Logos**:
+  - Update institution logos for original college/university and high school once user provides logo image assets.
+* **Remove Duplicate Open Source Projects Section**:
+  - Remove/disable the Open Source projects section to eliminate duplication with the main "Projects" section.
+* **Achievements Section Alignment**:
+  - Replace generic achievement entries with original personal achievements and recognitions.
+* **Hide Blog & Talk Sections**:
+  - Hide/disable "Blog" and "Talks" sections from both the topbar navigation header and the main page sections for now (retaining codebase compatibility for future use).
+* **Profile & Contact Details Update**:
+  - Update contact information, role details/descriptions, and personal profile image/photo.
+* **Footer Customization & Template Credits**:
+  - Remove default footer text:
+    ```
+    Made with ❤️ by DeveloperFolio Team
+    Theme by developerFolio
+    ```
+  - Replace with proper credits acknowledging `developerFolio` as the portfolio template foundation, including details/links to original template work and samples.
+

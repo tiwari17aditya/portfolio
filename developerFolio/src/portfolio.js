@@ -23,7 +23,7 @@ const greeting = {
   username: "Aditya Tiwari",
   title: "Hola Amigos, I'm Aditya",
   subTitle: emoji(
-    "I’m an AI / ML Engineer who loves turning complex data into smart, scalable solutions. While I speak \"human\" to my teammates, I speak Python and MLOps to my servers. I specialize in building end-to-end AI pipelines and Generative AI systems that actually solve real-world problems."
+    "I’m an ML & Platform Engineer with nearly 4 years of experience delivering highly reliable AI solutions and overseeing robust infrastructure operations. I specialize in bridging advanced predictive modeling with MLOps and platform management, ensuring machine learning systems are seamlessly deployed, scaled, and continuously maintained."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1sr5eI5I_xwr2X3BE1bDm-_Gwwjx-yTnM/view?usp=sharing", // Set to empty to hide the button
@@ -69,6 +69,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     },
@@ -85,8 +89,28 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-terminal"
     },
     {
-      skillName: "OpenAI",
-      fontAwesomeClassname: "fas fa-robot"
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-server"
+    },
+    {
+      skillName: "Streamlit",
+      fontAwesomeClassname: "fas fa-desktop"
+    },
+    {
+      skillName: "GitLab",
+      fontAwesomeClassname: "fab fa-gitlab"
+    },
+    {
+      skillName: "Prometheus",
+      fontAwesomeClassname: "fas fa-chart-bar"
+    },
+    {
+      skillName: "Grafana",
+      fontAwesomeClassname: "fas fa-tachometer-alt"
+    },
+    {
+      skillName: "LangGraph",
+      fontAwesomeClassname: "fas fa-project-diagram"
     },
     {
       skillName: "LangChain",
@@ -97,24 +121,20 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-brain"
     },
     {
-      skillName: "LlamaIndex",
-      fontAwesomeClassname: "fas fa-layer-group"
-    },
-    {
-      skillName: "MLflow",
-      fontAwesomeClassname: "fas fa-sync-alt"
-    },
-    {
-      skillName: "DVC",
-      fontAwesomeClassname: "fas fa-server"
-    },
-    {
       skillName: "PyTorch",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
       skillName: "TensorFlow",
       fontAwesomeClassname: "fas fa-microchip"
+    },
+    {
+      skillName: "Pandas",
+      fontAwesomeClassname: "fas fa-chart-pie"
+    },
+    {
+      skillName: "NumPy",
+      fontAwesomeClassname: "fas fa-calculator"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +146,23 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Global Nature Care Sangathan's Group Of Institutions",
+      schoolName: "Global Nature Care Sangathan’s Group Of Institution, Jabalpur",
       logo: require("./assets/images/college-logo.png"),
-      subHeader: "Bachelor's Of Technology in Electronics and TeleCommunication Engineering",
-      duration: "Aug 2018 - Aug 2022",
-      desc: "Got Distinction with Honors in the Academic Term",
+      subHeader: "BTech in Electronics and Telecommunication",
+      duration: "July 2018 – July 2022",
+      desc: "CGPA: 8.35/10.0",
       descBullets: [
-        "Event Manager for the College Techfest",
-        "Won District Level Robotics Hackathon with Gold Medal",
+        "Got Distinction with Honors in the Academic Term",
+        "Won District Level Robotics Hackathon with Gold Medal"
       ]
     },
     {
       schoolName: "Ashoka Hall Senior Secondary School",
       logo: require("./assets/images/school-logo.png"),
       subHeader: "Higher Secondary Education",
-      duration: "Apr 2016 - Apr 2018",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Won Medal at Mathematics Olympiad , 2015"]
+      duration: "Apr 2016 – Apr 2018",
+      desc: "Completed with focus on science and mathematics.",
+      descBullets: ["Won Medal at Mathematics Olympiad, 2015"]
     }
   ]
 };
@@ -190,17 +210,19 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "AI / ML Engineer",
-      company: "Jio Platforms",
+      role: "Data Scientist",
+      company: "Jio Platforms Limited",
       companylogo: require("./assets/images/jioLogo.png"),
-      date: "Aug 2022 – Present",
-      desc: "Working at the heart of India's largest digital ecosystem, I contribute to building intelligent, scalable AI infrastructure that powers millions of users. My role spans end-to-end ownership of ML and GenAI systems — from research and prototyping to production deployment.",
+      date: "July 2022 – Present",
+      desc: "Manage the internal JDSP Platform for the organization, taking full responsibility for development, cluster management, and maintaining a high-availability environment 99.9% for 500+ users.",
       descBullets: [
-        "Architected and deployed Retrieval-Augmented Generation (RAG) systems using LangChain, LlamaIndex, and OpenAI APIs to enable context-aware, enterprise-grade conversational AI at scale.",
-        "Built and maintained robust MLOps infrastructure using Docker, Kubernetes, and Apache Airflow — automating model training, evaluation, and deployment workflows across cloud environments.",
-        "Engineered high-throughput real-time inference APIs with FastAPI, significantly reducing model serving latency and enabling seamless integration with production-grade Jio products.",
-        "Collaborated with cross-functional teams including data engineering, product, and DevOps to deliver end-to-end Generative AI features with measurable business impact.",
-        "Optimized LLM-based solutions using Groq, Ollama, and Hugging Face Transformers — balancing performance, cost-efficiency, and accuracy for diverse use cases across the Jio digital platform."
+        "End-to-End Platform Ownership: Manage the internal JDSP Platform for the organization, taking full responsibility for development, cluster management, and maintaining a high-availability environment 99.9% for 500+ users.",
+        "Infrastructure Migration & Stabilization: Successfully executed a zero-downtime migration of legacy Airflow and JDSP workloads, stabilizing core infrastructure and leading complex user workspace transitions across environments (e.g., HDP to CDP).",
+        "Containerization & Orchestration: Orchestrate containerized services using Kubernetes and Docker, managing liveness probes and troubleshooting complex pod lifecycle issues (Exit Code 137) to ensure system resilience.",
+        "Systems & OS Management: Handle comprehensive on-premise server activities, including OS-level maintenance, cluster upgrades, scaling operations, and infrastructure optimization to support data-intensive workloads.",
+        "Automation & CI/CD: Streamline operational efficiency by automating manual processes and maintaining robust deployment pipelines through Git/GitHub, ensuring reliable version control and platform growth.",
+        "Expert Technical Support: Provide dedicated L1/L2 end-to-end support, troubleshooting platform-specific bottlenecks and delivering fast resolution for data engineering and data science teams.",
+        "Advanced Workflow Integration: Lead feature enhancements to streamline workflows, integrating modern tools for data orchestration with Apache Airflow and preparing the platform for scalable AI and RAG-based application deployments."
       ]
     }
   ]
@@ -211,7 +233,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -446,52 +468,25 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+      title: "Machine Learning Specialization",
+      subtitle: "Stanford Online / DeepLearning.AI (2025)",
+      image: require("./assets/images/stanfordLogo.png"),
+      imageAlt: "Stanford Online / DeepLearning.AI Logo",
+      footerLink: []
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+      title: "Generative AI with Large Language Models Specialization",
+      subtitle: "DeepLearning.AI (2026)",
+      image: require("./assets/images/deeplearning_ai_logo.png"),
+      imageAlt: "DeepLearning.AI Logo",
+      footerLink: []
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        { name: "Certification", url: "" },
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "Python for Everybody Specialization",
+      subtitle: "University of Michigan (2024)",
+      image: require("./assets/images/michigan_logo.png"),
+      imageAlt: "University of Michigan Logo",
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -518,7 +513,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -537,7 +532,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -550,7 +545,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -574,7 +569,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
