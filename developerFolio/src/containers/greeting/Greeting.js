@@ -41,7 +41,7 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
+                    href={require("./resume.pdf")?.default || require("./resume.pdf")}
                     download="Resume.pdf"
                     className="download-link-button"
                   >
@@ -54,7 +54,7 @@ export default function Greeting() {
           <div className="greeting-image-div">
             <img
               alt="Aditya Tiwari"
-              src={profilePhoto}
+              src={profilePhoto?.default || profilePhoto}
               className="profile-photo"
             ></img>
           </div>
