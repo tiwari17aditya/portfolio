@@ -6,6 +6,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import profilePhoto from "../../assets/images/photo.jpg";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -53,7 +54,7 @@ export default function Greeting() {
           <div className="greeting-image-div">
             <img
               alt="Aditya Tiwari"
-              src={require("../../assets/images/photo.jpg")}
+              src={profilePhoto}
               className="profile-photo"
             ></img>
           </div>
