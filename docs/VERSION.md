@@ -1,12 +1,18 @@
 # Version Tracking
 
-Current Project Version: **v1.6.0**  
-Release Date: **2026-08-16**  
+Current Project Version: **v1.6.1**  
+Release Date: **2026-08-17**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ---
 
 ## Release History
+
+### v1.6.1 (2026-08-17)
+- **Profile Photo Stream & Encoding Restoration**: Replaced corrupted JPEG asset with uncorrupted original `IMG_2602.jpg` (800 × 881 px, 205 KB clean sRGB JPEG).
+- **Webpack 5 Asset Import Standardization**: Added top-level ES module imports & `.default` string URL fallbacks across all UI cards (`Greeting.js`, `EducationCard.js`, `ExperienceCard.js`, `AchievementCard.js`, `StartupProject.js`).
+- **Font 404 Preload Cleanup**: Removed hardcoded font preload links from `index.html`.
+- **Vercel CI Build Resolution**: Removed unused `Fade` import from `Greeting.js` to ensure clean zero-warning builds under `CI=true`.
 
 ### v1.6.0 (2026-08-16)
 - **Portfolio Projects Audit & Streamlining**: Audited workspace project directories and updated `portfolio.js` UI to display 11 verified production projects (including TaskPulse Enterprise and Utility Projects Suite).

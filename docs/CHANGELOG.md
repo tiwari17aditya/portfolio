@@ -2,6 +2,16 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.6.1] - 2026-08-17
+
+### Fixed
+- **Corrupted Image Stream Restoration**: Replaced corrupted `photo.jpg` asset with pristine original `IMG_2602.jpg` (800 × 881 px, 205 KB clean sRGB JPEG).
+- **Webpack 5 Asset Import Bug**: Added ES module imports & `.default` URL fallbacks across all UI cards (`src={img?.default || img}`).
+- **Font 404 Preloads**: Removed hardcoded font preload links from `index.html`.
+- **Vercel CI Build Error**: Removed unused `Fade` import from `Greeting.js` to ensure zero-warning builds under `CI=true`.
+
+---
+
 ## [1.6.0] - 2026-08-16
 
 ### Changed
