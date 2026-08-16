@@ -142,10 +142,12 @@
     text-align: center;
   }
   .greeting-main {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .greeting-image-div {
-    height: 256px;
+    height: auto;
+    margin-bottom: 20px;
   }
 }
 
