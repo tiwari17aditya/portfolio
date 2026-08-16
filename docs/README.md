@@ -28,17 +28,18 @@ A professional, single-page interactive developer portfolio. Optimized for rapid
 
 ## 2. Configuration System
 
-- **Profile Content**: Edit [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/portfolio.js) at the root of the workspace to customize names, greetings, schools, experiences, achievements, and layout sections.
+- **Profile Content**: Edit [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) to customize names, greetings, schools, experiences, achievements, and layout sections.
+- **Excluded & Ongoing Projects**: Documented in [ongoing-or-not-verified-projects.md](file:///e:/hdd-data/Projects/portfolio-website/docs/ongoing-or-not-verified-projects.md) for R&D, experimental, and unverified projects excluded from the UI.
 - **Environment Variables**: Configure credentials, API toggles, and token overrides inside `developerFolio/.env`.
 
 ---
 
 ## 3. Observability & Logging
 
-Whenever the project builds or runs its fetch script, metrics are written to the workspace root:
-- **Daily Logs**: Located in `logs/log_D_Month_YYYY.log` tracking task events.
-- **Build Telemetry**: Performance and hit count tables stored in `logs/usage_telemetry.md`.
-- **API Quotas**: GitHub GraphQL rate limit indicators captured in `logs/quota_tracking.md`.
+All logs and telemetry are organized under the root [`logs/`](file:///e:/hdd-data/Projects/portfolio-website/logs) directory:
+- **Execution Logs**: Located in `logs/execution_logs/` tracking task events and runtime scripts.
+- **Session Summaries**: Stored in `logs/session_summaries/` for work session accomplishments.
+- **Token Telemetry**: Usage tables and token counts captured in `logs/token_tracking/session_token_telemetry.md` and `usage_telemetry.md`.
 
 ---
 

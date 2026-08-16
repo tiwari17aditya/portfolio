@@ -31,7 +31,7 @@ Minimize input and output token consumption across LLM interactions, subagent ta
 - **Template Reusability**: Use parameterized script templates (like `update_portfolio.py`) for recurring tasks instead of generating long imperative code snippets in conversational turns.
 
 ### 5. Session Token Telemetry & Auditing
-- **Token Accounting**: Track and record `Input Tokens`, `Output Tokens`, `Total Tokens`, and `Model` in `logs/session_token_telemetry.md` for every session.
+- **Token Accounting**: Track and record `Input Tokens`, `Output Tokens`, `Total Tokens`, and `Model` in `logs/token_tracking/session_token_telemetry.md` for every session.
 - **Spike Detection**: Audit sessions where total token count exceeds threshold (>50,000 tokens) to identify inefficient file reads or redundant tool invocation loops and refine prompts accordingly.
 
 ---
@@ -39,5 +39,5 @@ Minimize input and output token consumption across LLM interactions, subagent ta
 ## Verification Checklist
 - [ ] Targeted line range bounds used for all `view_file` calls.
 - [ ] No full-file outputs re-summarized in conversation turns.
-- [ ] Input and output tokens recorded in `logs/session_token_telemetry.md`.
+- [ ] Input and output tokens recorded in `logs/token_tracking/session_token_telemetry.md`.
 - [ ] Static system prompts structured to optimize caching.

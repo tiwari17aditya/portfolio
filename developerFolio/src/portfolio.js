@@ -240,7 +240,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "A SHOWCASE OF 17 PRODUCTION-GRADE AI, AUTOMATION, MLOPS & WEB APPLICATIONS",
+  subtitle: "A SHOWCASE OF 11 PRODUCTION-GRADE AI, AUTOMATION, MLOPS & WEB APPLICATIONS",
   projects: [
     {
       image: require("./assets/images/vitals_guard_logo.png"),
@@ -261,7 +261,7 @@ const bigProjects = {
     {
       image: require("./assets/images/mahabharat_pipeline_logo.png"),
       projectName: "Mahabharat (Automated Video Production)",
-      projectDesc: "An automated multi-platform video production system featuring AI-powered story script and storyboard generation, dynamic React video template compiling via Remotion, quota manager systems, and an integrated deployment dashboard.",
+      projectDesc: "An automated multi-platform video production system featuring AI-powered story script and storyboard generation, dynamic React video template compiling via Remotion, quota manager systems, and automated YouTube Data API v3 upload scheduling.",
       techStack: ["Python", "Node.js", "Remotion", "React", "Gemini API", "GitHub Actions"],
       footerLink: [
         {
@@ -271,18 +271,6 @@ const bigProjects = {
         {
           name: "View on GitHub",
           url: "https://github.com/tiwari17aditya/mahabharata-series-yt-animated"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/stock_analysis_logo.png"),
-      projectName: "Stocks Insights Agent",
-      projectDesc: "An agentic AI stock insights generator performing multi-agent reasoning, transcript fetching, and local/cloud LLM analysis to send automated daily insights via SMTP, scheduled with GitHub Actions.",
-      techStack: ["Python", "CrewAI", "Ollama", "Groq", "GitHub Actions", "SMTP"],
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/stocks_insights_agent"
         }
       ]
     },
@@ -337,9 +325,13 @@ const bigProjects = {
     {
       image: require("./assets/images/target_air_10_logo.png"),
       projectName: "TARGET AIR 10 (Banking Exam Tracker)",
-      projectDesc: "A high-performance, single-page web application (SPA) for tracking 399 test papers across 20 mock test categories, featuring analytics, revision countdowns, and automated progress logging.",
-      techStack: ["JavaScript", "HTML5", "CSS3", "GitHub Actions"],
+      projectDesc: "A high-performance single-page web application (SPA) for tracking 399 test papers across 20 mock test categories, featuring analytics, revision countdowns, and automated progress logging.",
+      techStack: ["JavaScript", "HTML5", "CSS3", "GitHub Actions", "Neon PostgreSQL"],
       footerLink: [
+        {
+          name: "Live App",
+          url: "https://tiwari17aditya.github.io/adda-timetable-revision/"
+        },
         {
           name: "View on GitHub",
           url: "https://github.com/tiwari17aditya/adda-timetable-revision"
@@ -347,81 +339,9 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/travel_planner_agent_logo.png"),
-      projectName: "Agentic AI Travel Planner",
-      projectDesc: "An autonomous, multi-tool AI agent built with LangGraph and Gemini Flash that gathers real-time weather, flight, and hotel data to construct personalized, cost-optimized travel itineraries.",
-      techStack: ["Python", "LangChain", "Streamlit", "Gemini API", "Docker"],
-      footerLink: [
-        {
-          name: "View Architecture",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/repo_insight_logo.png"),
-      projectName: "RepoInsight (Codebase Graph Intelligence)",
-      projectDesc: "A graph database-powered code analysis tool that parses ASTs, tracks inter-module dependencies with Neo4j, and provides interactive visualization of complex software architectures.",
-      techStack: ["Python", "Neo4j", "Docker", "Data Science"],
-      footerLink: [
-        {
-          name: "View Architecture",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/financial_hub_ai_logo.png"),
-      projectName: "Financial Hub AI",
-      projectDesc: "An interactive multi-agent financial dashboard providing AI-driven stock sentiment analysis, SEC filing summarization, and automated portfolio asset allocation insights.",
-      techStack: ["Python", "Streamlit", "LangChain", "OpenAI"],
-      footerLink: [
-        {
-          name: "View Architecture",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/weather_agentic_ai_logo.png"),
-      projectName: "Weather Agentic AI",
-      projectDesc: "A context-aware weather decision support agent powered by LangChain and OpenWeather APIs that converts live meteorological forecasts into actionable event recommendations.",
-      techStack: ["Python", "LangChain", "Streamlit", "OpenWeather API"],
-      footerLink: [
-        {
-          name: "View Architecture",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/git_auto_push_logo.png"),
-      projectName: "Git Auto-Push Automation",
-      projectDesc: "A minimal, professional, and portable tool to automate Git activity by recording daily execution logs and pushing commits reliably across configured repositories.",
-      techStack: ["Python", "GitHub Actions", "Git CLI", "Bash"],
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/Adistar656/everydaypush"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/langgraph_chatbot_logo.png"),
-      projectName: "Basic LangGraph Chatbot",
-      projectDesc: "A stateful conversational AI chatbot built on LangGraph demonstrating human-in-the-loop validation, memory persistence, and dynamic fallback state routing.",
-      techStack: ["Python", "LangGraph", "LangChain"],
-      footerLink: [
-        {
-          name: "View Architecture",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
-    },
-    {
       image: require("./assets/images/personal_tracker_logo.png"),
       projectName: "Professional Personal Tracker",
-      projectDesc: "A robust, CLI-based progress and habit tracking platform built with Python and Rich for terminal-rendered charts, data exports, and milestone tracking.",
+      projectDesc: "A robust CLI-based progress and habit tracking platform built with Python and Rich for terminal-rendered charts, data exports, and milestone tracking.",
       techStack: ["Python", "Rich CLI", "JSON Engine"],
       footerLink: [
         {
@@ -432,13 +352,13 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/project_converter_logo.png"),
-      projectName: "Project Converter Utility",
-      projectDesc: "An extensible file and project format conversion engine capable of converting document templates, markdown assets, and code structures with custom pipelines.",
-      techStack: ["Python", "CLI Tooling"],
+      projectName: "Utility Projects Suite",
+      projectDesc: "A curated suite of productivity tools and single-functionality utilities, including Gmail Auto-Cleaner (IMAP SSL), Eye Care Tracker, System Maintenance scripts, and GitHub development tools.",
+      techStack: ["Python", "IMAP SSL", "CLI Tooling", "Bash"],
       footerLink: [
         {
-          name: "View Codebase",
-          url: "https://github.com/tiwari17aditya"
+          name: "View on GitHub",
+          url: "https://github.com/tiwari17aditya/utility-projects"
         }
       ]
     },
@@ -451,6 +371,18 @@ const bigProjects = {
         {
           name: "View Codebase",
           url: "https://github.com/tiwari17aditya"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/orchestrator_prime_logo.png"),
+      projectName: "TaskPulse Enterprise",
+      projectDesc: "A modern, full-stack enterprise productivity workspace built with Next.js 14 App Router, React 19, Tailwind CSS, and NeonDB PostgreSQL for scalable task & workspace orchestration.",
+      techStack: ["Next.js", "React 19", "Tailwind CSS", "NeonDB PostgreSQL", "TypeScript"],
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tiwari17aditya/taskpulse"
         }
       ]
     }

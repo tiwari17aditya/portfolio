@@ -2,6 +2,17 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.6.0] - 2026-08-16
+
+### Changed
+- **Portfolio UI Streamlining**: Filtered `portfolio.js` `bigProjects` list to display 11 verified production projects (Medication Tracker, Mahabharat, Pulse Vector, Daily CA Insights, Orchestrator Prime, Vibrant Music Academy, TARGET AIR 10, Professional Personal Tracker, Utility Projects Suite, Google Takeout Organizer, TaskPulse Enterprise).
+
+### Added
+- **Excluded & Ongoing Projects Catalog**: Added `docs/ongoing-or-not-verified-projects.md` detailing 12 experimental, R&D, and unverified workspace projects excluded from UI.
+- **Structured Logs Directory**: Restructured `logs/` into dedicated subdirectories (`execution_logs/`, `session_summaries/`, `token_tracking/`).
+
+---
+
 ## [1.5.7] - 2026-08-12
 
 ### Fixed

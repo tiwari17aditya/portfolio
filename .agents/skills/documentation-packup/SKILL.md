@@ -13,15 +13,15 @@ description: URL tracker maintenance, documentation synchronization, session tok
 - Maintain `docs/VERSION.md` for semantic version tracking (`vX.Y.Z`).
 
 ### 2. Centralized Logging & Telemetry (`logs/`)
-- Record session usage and token metrics in `logs/session_token_telemetry.md` and `logs/usage_telemetry.md`.
-- Generate a session summary log file `logs/session_summary_<YYYY-MM-DD>.md` for each work session detailing all changes, additions, and refactorings completed during the session.
+- Record session usage and token metrics in `logs/token_tracking/session_token_telemetry.md` and `logs/token_tracking/usage_telemetry.md`.
+- Generate a session summary log file `logs/session_summaries/session_summary_<YYYY-MM-DD>.md` for each work session detailing all changes, additions, and refactorings completed during the session.
 
 ### 3. Packup Workflow (When "packup" is triggered)
 When the user requests "packup", execute the following sequence:
 
 1. **Update Logs**:
-   - Write session summary to `logs/session_summary_<YYYY-MM-DD>.md`.
-   - Log input, output, and total token usage in `logs/session_token_telemetry.md` and `logs/usage_telemetry.md`.
+   - Write session summary to `logs/session_summaries/session_summary_<YYYY-MM-DD>.md`.
+   - Log input, output, and total token usage in `logs/token_tracking/session_token_telemetry.md` and `logs/token_tracking/usage_telemetry.md`.
 
 2. **Synchronize Docs**:
    - Ensure all documentation files are up to date and situated inside `docs/`.
