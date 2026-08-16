@@ -53,7 +53,7 @@ export default function Greeting() {
         <div className="greeting-image-div">
           <img
             alt="Aditya Tiwari"
-            src={profilePhoto?.default || profilePhoto}
+            src={profilePhoto}
             className="profile-photo"
           ></img>
         </div>
