@@ -250,7 +250,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Deployed Site",
-          url: "https://vitalsguard-health-medication-track.vercel.app/"
+          url: "https://vitalsguard.vercel.app/"
         },
         {
           name: "View on GitHub",
@@ -376,6 +376,10 @@ const bigProjects = {
       projectDesc: "A modern, high-performance web application & interactive music academy platform built for Vibrant Music Academy with responsive dynamic course listings, audio previews, and sleek UI components.",
       techStack: ["React", "JavaScript", "Vite", "CSS3"],
       footerLink: [
+        {
+          name: "Visit Deployed Site",
+          url: "https://vibrantmusicacademy.vercel.app/"
+        },
         {
           name: "View on GitHub",
           url: "https://github.com/tiwari17aditya/vibrant-music-academy"
