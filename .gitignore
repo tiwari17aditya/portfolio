@@ -21,3 +21,5 @@ developerFolio/.env.production.local
 .pnp
 .pnp.js
 /coverage
+__pycache__/
+*.py[cod]

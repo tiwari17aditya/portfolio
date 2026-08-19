@@ -2,6 +2,22 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.7.0] - 2026-08-19
+
+### Added
+- **Projects Section Expansion (16 Production Systems)**: Promoted 5 high-impact projects into the primary `bigProjects` showcase in `portfolio.js`:
+  - *Local Stock Insights Autopilot Agent*: 100% local, CPU-quantized transcription with `faster-whisper`, multi-agent orchestration via `CrewAI` + `Ollama`, automated HTML digests via SMTP TLS.
+  - *Agentic AI Travel Planner*: Multi-tool ReAct travel concierge with `LangGraph`, `Gemini Flash`, and interactive `Streamlit` UI.
+  - *Intelligent Financial Hub AI*: Multi-agent wealth planner, SIP vs. Lumpsum comparative analysis, and `Plotly` glassmorphic dashboard.
+  - *Weather Intelligence Agent*: Real-time agentic meteorology analyzer using `LangGraph` + `Tavily Search` + `Gemini API`.
+  - *Git Auto-Push Automation*: Background scheduler and Git activity orchestrator in Python and VBScript.
+
+### Changed
+- **Showcase Subtitle**: Updated subtitle to highlight 16 production-grade AI, Agentic systems, MLOps, and Web applications.
+- **Documentation Catalog**: Updated `docs/ongoing-or-not-verified-projects.md`, `docs/VERSION.md`, `docs/URL_TRACKER.md`, and session summaries.
+
+---
+
 ## [1.6.1] - 2026-08-17
 
 ### Fixed

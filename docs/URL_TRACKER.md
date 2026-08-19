@@ -40,6 +40,8 @@ This document catalogs all external URLs, links, social media addresses, endpoin
 | **Daily CA Insights — GitHub** | `https://github.com/tiwari17aditya/Antigravity-daily-CA-Insights` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
 | **Vibrant Music Academy — GitHub** | `https://github.com/tiwari17aditya/vibrant-music-academy` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
 | **TARGET AIR 10 — GitHub** | `https://github.com/tiwari17aditya/adda-timetable-revision` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **TaskPulse Enterprise — GitHub** | `https://github.com/tiwari17aditya/taskpulse` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
+| **Utility Projects Suite — GitHub** | `https://github.com/tiwari17aditya/utility-projects` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
 | **Git Auto-Push — GitHub** | `https://github.com/Adistar656/everydaypush` | [portfolio.js](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/src/portfolio.js) |
 | **GitHub Pages Domain** | `https://tiwari17aditya.github.io/portfolio` | [package.json](file:///e:/hdd-data/Projects/portfolio-website/developerFolio/package.json) |
 | **GitHub Remote Repo** | `https://github.com/tiwari17aditya/portfolio.git` | git remote |
