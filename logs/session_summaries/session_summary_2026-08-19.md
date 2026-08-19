@@ -16,6 +16,7 @@
      - **Intelligent Financial Hub AI**: Multi-agent wealth planner, SIP vs. Lumpsum comparative analysis, and `Plotly` dashboard.
      - **Weather Intelligence Agent**: Meteorological agent combining `LangGraph`, `Tavily Search`, and `Gemini API`.
      - **Git Auto-Push Automation**: Portable Python and VBScript background synchronization utility.
+   - Updated direct live deployment URLs for **Medication Tracker (VitalsGuard)** (`https://vitalsguard.vercel.app/`) and **Vibrant Music Academy** (`https://vibrantmusicacademy.vercel.app/`).
    - Verified that high-resolution custom logo assets (`stock_analysis_logo.png`, `travel_planner_agent_logo.png`, `financial_hub_ai_logo.png`, `weather_agentic_ai_logo.png`, `git_auto_push_logo.png`, `repo_insight_logo.png`) map cleanly to all 16 featured projects.
 
 3. **Production Build & Compilation Verification**:

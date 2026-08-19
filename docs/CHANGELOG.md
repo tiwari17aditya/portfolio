@@ -13,6 +13,7 @@ All notable changes to the portfolio website project are documented here using s
   - *Git Auto-Push Automation*: Background scheduler and Git activity orchestrator in Python and VBScript.
 
 ### Changed
+- **Live Deployment URLs Updated**: Configured direct production URLs for VitalsGuard (`https://vitalsguard.vercel.app/`) and Vibrant Music Academy (`https://vibrantmusicacademy.vercel.app/`).
 - **Showcase Subtitle**: Updated subtitle to highlight 16 production-grade AI, Agentic systems, MLOps, and Web applications.
 - **Documentation Catalog**: Updated `docs/ongoing-or-not-verified-projects.md`, `docs/VERSION.md`, `docs/URL_TRACKER.md`, and session summaries.
 

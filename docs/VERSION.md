@@ -11,6 +11,7 @@ Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 ### v1.7.0 (2026-08-19)
 - **Projects Showcase Expansion to 16 Production Systems**: Scanned all project roots dynamically (`C:\Users\Admin\Desktop\Projects`, `D:\youtube-projects`, `E:\hdd-data\Projects`, `E:\hdd-data\pulse-vector`, etc.) and promoted 5 high-impact systems into `portfolio.js` `bigProjects`.
 - **Integrated Agentic AI & Automation Projects**: Added Local Stock Insights Autopilot Agent (CrewAI + Ollama + faster-whisper), Agentic AI Travel Planner (LangGraph + Gemini Flash), Intelligent Financial Hub AI (LangChain + Plotly), Weather Intelligence Agent (LangGraph + Tavily), and Git Auto-Push Automation.
+- **Live Deployment Link Refinements**: Updated live deployment links for VitalsGuard (`https://vitalsguard.vercel.app/`) and Vibrant Music Academy (`https://vibrantmusicacademy.vercel.app/`).
 - **Production Build Validation**: Verified zero-error compilation with React Scripts and static assets.
 - **Documentation & Telemetry Synchronization**: Synchronized `URL_TRACKER.md`, `ongoing-or-not-verified-projects.md`, `CHANGELOG.md`, and session token telemetry.
 
