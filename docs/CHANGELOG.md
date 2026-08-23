@@ -2,6 +2,19 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.8.0] - 2026-08-23
+
+### Added
+- **Deep-Scan Technical Skills Expansion (79 Projects)**: Comprehensive scan across 79 project repositories on all local drives (`C:`, `D:`, `E:`), extracting primary, secondary, and optional open-source tools, vector databases, and AI frameworks.
+- **Added 37 Software Skill Icons**: Updated `skillsSection.softwareSkills` in `portfolio.js` with NeonDB PostgreSQL, Supabase, ChromaDB, Neo4j, LangGraph, LangChain, CrewAI, Ollama, DeepSeek LLM, Gemini API, Groq API, OpenAI API, FastAPI, Streamlit, Next.js, React, Tailwind CSS, Vite, Remotion, Docker, Kubernetes, Apache Airflow, GitHub Actions, Vercel, PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy, Plotly, FFmpeg, Prometheus, Grafana, and Bash.
+- **Added 18 Tech Stack Skill Cards**: Updated `techStack.experience` in `portfolio.js` with 18 clean domain cards covering all project domains and **removed percentage progress indicators as requested**.
+- **Dynamic Icon Resolver**: Extended `getIconForSkill` in `skillProgress.js` to map FontAwesome icons for all newly added open-source technologies.
+
+### Changed
+- **Technical Skills UI**: Removed all percentage skill bars in favor of clean, interactive tech stack cards.
+
+---
+
 ## [1.7.0] - 2026-08-19
 
 ### Added

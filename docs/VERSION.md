@@ -1,12 +1,19 @@
 # Version Tracking
 
-Current Project Version: **v1.7.0**  
-Release Date: **2026-08-19**  
+Current Project Version: **v1.8.0**  
+Release Date: **2026-08-23**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ---
 
 ## Release History
+
+### v1.8.0 (2026-08-23)
+- **Deep-Scan Technical Skills Expansion (79 Projects)**: Deep-scanned 79 project repositories across all drive roots (`C:`, `D:`, `E:`) to extract primary, secondary, and optional open-source tools, vector databases, and AI frameworks.
+- **Added 37 Software Skill Icons**: Updated `skillsSection.softwareSkills` in `portfolio.js` with NeonDB PostgreSQL, Supabase, ChromaDB, Neo4j, LangGraph, LangChain, CrewAI, Ollama, DeepSeek LLM, Gemini API, Groq API, OpenAI API, FastAPI, Streamlit, Next.js, React, Tailwind CSS, Vite, Remotion, Docker, Kubernetes, Apache Airflow, GitHub Actions, Vercel, PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy, Plotly, FFmpeg, Prometheus, Grafana, and Bash.
+- **Added 18 Tech Stack Skill Cards**: Updated `techStack.experience` in `portfolio.js` with 18 clean domain cards covering all project domains and **removed percentage progress indicators as requested**.
+- **Dynamic Icon Resolver**: Extended `getIconForSkill` in `skillProgress.js` to map FontAwesome icons for all newly added open-source technologies.
+- **Production Build Validation**: Verified zero-error React production bundle compilation (`npm run build`).
 
 ### v1.7.0 (2026-08-19)
 - **Projects Showcase Expansion to 16 Production Systems**: Scanned all project roots dynamically (`C:\Users\Admin\Desktop\Projects`, `D:\youtube-projects`, `E:\hdd-data\Projects`, `E:\hdd-data\pulse-vector`, etc.) and promoted 5 high-impact systems into `portfolio.js` `bigProjects`.

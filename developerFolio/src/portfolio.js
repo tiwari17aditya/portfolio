@@ -69,8 +69,88 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "SQL",
+      skillName: "NeonDB",
       fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Supabase",
+      fontAwesomeClassname: "fas fa-bolt"
+    },
+    {
+      skillName: "ChromaDB",
+      fontAwesomeClassname: "fas fa-layer-group"
+    },
+    {
+      skillName: "Neo4j",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {
+      skillName: "LangGraph",
+      fontAwesomeClassname: "fas fa-network-wired"
+    },
+    {
+      skillName: "LangChain",
+      fontAwesomeClassname: "fas fa-link"
+    },
+    {
+      skillName: "CrewAI",
+      fontAwesomeClassname: "fas fa-users-cog"
+    },
+    {
+      skillName: "Ollama",
+      fontAwesomeClassname: "fas fa-microchip"
+    },
+    {
+      skillName: "Gemini API",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "Groq API",
+      fontAwesomeClassname: "fas fa-bolt"
+    },
+    {
+      skillName: "OpenAI API",
+      fontAwesomeClassname: "fas fa-robot"
+    },
+    {
+      skillName: "DeepSeek LLM",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-server"
+    },
+    {
+      skillName: "Streamlit",
+      fontAwesomeClassname: "fas fa-desktop"
+    },
+    {
+      skillName: "Next.js",
+      fontAwesomeClassname: "fas fa-layer-group"
+    },
+    {
+      skillName: "React",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "Tailwind CSS",
+      fontAwesomeClassname: "fas fa-paint-brush"
+    },
+    {
+      skillName: "Vite",
+      fontAwesomeClassname: "fas fa-bolt"
+    },
+    {
+      skillName: "Remotion",
+      fontAwesomeClassname: "fas fa-video"
     },
     {
       skillName: "Docker",
@@ -85,40 +165,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-wind"
     },
     {
-      skillName: "Bash",
-      fontAwesomeClassname: "fas fa-terminal"
+      skillName: "GitHub Actions",
+      fontAwesomeClassname: "fab fa-github"
     },
     {
-      skillName: "FastAPI",
-      fontAwesomeClassname: "fas fa-server"
-    },
-    {
-      skillName: "Streamlit",
-      fontAwesomeClassname: "fas fa-desktop"
-    },
-    {
-      skillName: "GitLab",
-      fontAwesomeClassname: "fab fa-gitlab"
-    },
-    {
-      skillName: "Prometheus",
-      fontAwesomeClassname: "fas fa-chart-bar"
-    },
-    {
-      skillName: "Grafana",
-      fontAwesomeClassname: "fas fa-tachometer-alt"
-    },
-    {
-      skillName: "LangGraph",
-      fontAwesomeClassname: "fas fa-project-diagram"
-    },
-    {
-      skillName: "LangChain",
-      fontAwesomeClassname: "fas fa-link"
-    },
-    {
-      skillName: "Hugging Face",
-      fontAwesomeClassname: "fas fa-brain"
+      skillName: "Vercel",
+      fontAwesomeClassname: "fas fa-cloud-upload-alt"
     },
     {
       skillName: "PyTorch",
@@ -129,12 +181,36 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-microchip"
     },
     {
+      skillName: "Scikit-Learn",
+      fontAwesomeClassname: "fas fa-cogs"
+    },
+    {
       skillName: "Pandas",
       fontAwesomeClassname: "fas fa-chart-pie"
     },
     {
       skillName: "NumPy",
       fontAwesomeClassname: "fas fa-calculator"
+    },
+    {
+      skillName: "Plotly",
+      fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+      skillName: "FFmpeg",
+      fontAwesomeClassname: "fas fa-file-video"
+    },
+    {
+      skillName: "Prometheus",
+      fontAwesomeClassname: "fas fa-chart-bar"
+    },
+    {
+      skillName: "Grafana",
+      fontAwesomeClassname: "fas fa-tachometer-alt"
+    },
+    {
+      skillName: "Bash",
+      fontAwesomeClassname: "fas fa-terminal"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -172,34 +248,24 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    {
-      Stack: "Docker",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "Python",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "Kubernetes", //Insert stack or technology you have experience in
-      progressPercentage: "85%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Airflow",
-      progressPercentage: "80%"
-    },
-    {
-      Stack: "MLOps / LLMOps",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Artificial Intelligence",
-      progressPercentage: "45%"
-    },
-    {
-      Stack: "Agentic AI",
-      progressPercentage: "40%"
-    }
+    { Stack: "Python" },
+    { Stack: "NeonDB PostgreSQL" },
+    { Stack: "Supabase" },
+    { Stack: "Docker & Kubernetes" },
+    { Stack: "LangGraph & LangChain" },
+    { Stack: "CrewAI & Agentic AI" },
+    { Stack: "ChromaDB & Vector DBs" },
+    { Stack: "FastAPI & Backend" },
+    { Stack: "Gemini & Groq LLMs" },
+    { Stack: "Ollama & Local LLMs" },
+    { Stack: "Apache Airflow & MLOps" },
+    { Stack: "Next.js & React" },
+    { Stack: "GitHub Actions & CI/CD" },
+    { Stack: "Streamlit & UI Tools" },
+    { Stack: "TypeScript & JS" },
+    { Stack: "Scikit-Learn & ML" },
+    { Stack: "DeepSeek & AI Agents" },
+    { Stack: "FFmpeg & Video Automation" }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
