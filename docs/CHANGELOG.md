@@ -2,6 +2,18 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [1.9.0] - 2026-08-23
+
+### Added
+- **Technical Skills Categorization & Grouping**: Categorized 37 software skills and technical stack cards into 5 domain groups (*Generative AI & Agentic Frameworks*, *MLOps & Infrastructure*, *Databases & Vector Stores*, *Backend & Web Development*, *Data Science & Machine Learning*).
+- **Interactive Category Filter Pills**: Interactive pill buttons in `SoftwareSkill.js` allowing filtering by category or viewing all grouped categories.
+- **Section Badges & Gradient Dividers**: Designed category badges in `SoftwareSkill.scss` and gradient lines in `Progress.scss`.
+
+### Changed
+- **Technical Skills Container (`skillProgress.js`)**: Rendered cards organized under distinct category subheadings rather than an unstructured single grid.
+
+---
+
 ## [1.8.0] - 2026-08-23
 
 ### Added

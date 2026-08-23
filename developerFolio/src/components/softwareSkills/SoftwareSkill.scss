@@ -1,31 +1,117 @@
 @import "../../_globalColor";
 
+.software-skills-container {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+  justify-content: flex-start;
+}
+
+.category-tab-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(100, 91, 235, 0.2);
+  color: $subTitle;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  outline: none;
+
+  &:hover {
+    background: rgba(100, 91, 235, 0.15);
+    color: $skillsColor;
+    border-color: $skillsColor;
+    transform: translateY(-2px);
+  }
+
+  &.active {
+    background: linear-gradient(135deg, $skillsColor, #3b82f6);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(100, 91, 235, 0.35);
+  }
+}
+
+.skill-category-block {
+  margin-bottom: 20px;
+}
+
+.category-group-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-top: 10px;
+
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(100, 91, 235, 0.3), transparent);
+    margin-left: 12px;
+  }
+}
+
+.category-group-badge {
+  font-family: "Inter", "Outfit", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: $skillsColor;
+  background: rgba(100, 91, 235, 0.08);
+  border: 1px solid rgba(100, 91, 235, 0.25);
+  padding: 4px 12px;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
+  font-size: 2.4rem;
   margin-bottom: 0px;
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
 }
 
 .software-skill-inline {
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin-right: 18px;
+  margin-bottom: 16px;
+  text-align: center;
+  transition: transform 0.25s ease;
+
+  &:hover {
+    transform: scale(1.15) translateY(-3px);
+  }
 }
 
 .software-skill-inline > i {
   color: $subTitle;
+  transition: color 0.25s ease;
 }
 
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }
+
 .software-skill-inline > p {
   color: $subTitle;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 4px;
+  transition: color 0.25s ease;
 }
+
 .software-skill-inline > i:hover ~ p {
   color: $skillsColor;
 }
+

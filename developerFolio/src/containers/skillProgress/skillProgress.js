@@ -40,37 +40,68 @@ const cardVariants = [
 
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
+    let globalCardIndex = 0;
+    const hasCategorized =
+      techStack.categorizedExperience &&
+      techStack.categorizedExperience.length > 0;
+
     return (
       <Fade bottom duration={1000} distance="20px">
         <div className="skills-container">
           <div className="skills-bar">
             <h1 className="skills-heading">Technical Skills</h1>
-            <div className="skills-grid">
-              {techStack.experience.map((exp, i) => {
-                const variant = cardVariants[i % cardVariants.length];
-                const iconClass = getIconForSkill(exp.Stack);
-                return (
-                  <div key={i} className={`skill-card ${variant}`}>
-                    <div className="skill-card-inner">
-                      <div className="skill-card-icon-div">
-                        <i className={`${iconClass} skill-card-icon`}></i>
-                      </div>
-                      <span className="skill-card-title">{exp.Stack}</span>
-                    </div>
+
+            {hasCategorized ? (
+              techStack.categorizedExperience.map((catGroup, groupIdx) => (
+                <div key={groupIdx} className="tech-category-group">
+                  <h3 className="tech-category-heading">
+                    {catGroup.categoryName}
+                  </h3>
+                  <div className="skills-grid">
+                    {catGroup.skills.map((exp, i) => {
+                      const variant =
+                        cardVariants[globalCardIndex % cardVariants.length];
+                      globalCardIndex++;
+                      const iconClass = getIconForSkill(exp.Stack);
+                      return (
+                        <div key={i} className={`skill-card ${variant}`}>
+                          <div className="skill-card-inner">
+                            <div className="skill-card-icon-div">
+                              <i className={`${iconClass} skill-card-icon`}></i>
+                            </div>
+                            <span className="skill-card-title">{exp.Stack}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              ))
+            ) : (
+              <div className="skills-grid">
+                {techStack.experience.map((exp, i) => {
+                  const variant = cardVariants[i % cardVariants.length];
+                  const iconClass = getIconForSkill(exp.Stack);
+                  return (
+                    <div key={i} className={`skill-card ${variant}`}>
+                      <div className="skill-card-inner">
+                        <div className="skill-card-icon-div">
+                          <i className={`${iconClass} skill-card-icon`}></i>
+                        </div>
+                        <span className="skill-card-title">{exp.Stack}</span>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           <div className="skills-image">
             {illustration.animated ? (
               <DisplayLottie animationData={Build} />
             ) : (
-              <img
-                alt="Skills"
-                src={require("../../assets/images/skill.svg")}
-              />
+              <img alt="Skills" src={require("../../assets/images/skill.svg")} />
             )}
           </div>
         </div>

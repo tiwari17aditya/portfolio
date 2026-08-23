@@ -1,12 +1,18 @@
 # Version Tracking
 
-Current Project Version: **v1.8.0**  
+Current Project Version: **v1.9.0**  
 Release Date: **2026-08-23**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ---
 
 ## Release History
+
+### v1.9.0 (2026-08-23)
+- **Technical Skills Categorization & Grouping**: Refactored the flat list of 37 software skills and technical stack cards into 5 domain categories: *Generative AI & Agentic Frameworks*, *MLOps & Infrastructure*, *Databases & Vector Stores*, *Backend & Web Development*, and *Data Science & Machine Learning*.
+- **Interactive Category Filter Pills**: Integrated glassmorphism filter pills (`All`, `Generative AI & LLMs`, `MLOps & Infrastructure`, `Databases & Vector Stores`, `Backend & Web Dev`, `Data Science & ML`) into `SoftwareSkill.js`.
+- **Category Header Badges & Grouping**: Updated `SoftwareSkill.js`, `SoftwareSkill.scss`, `skillProgress.js`, and `Progress.scss` to render section badges and gradient accent dividers for skill groups.
+- **Terser Memory Optimization & Production Build Validation**: Increased webpack node memory allocation (`NODE_OPTIONS=--max-old-space-size=4096`) and verified clean zero-error bundle compilation.
 
 ### v1.8.0 (2026-08-23)
 - **Deep-Scan Technical Skills Expansion (79 Projects)**: Deep-scanned 79 project repositories across all drive roots (`C:`, `D:`, `E:`) to extract primary, secondary, and optional open-source tools, vector databases, and AI frameworks.

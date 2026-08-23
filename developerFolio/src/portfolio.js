@@ -64,153 +64,199 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "NeonDB",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "Supabase",
-      fontAwesomeClassname: "fas fa-bolt"
-    },
-    {
-      skillName: "ChromaDB",
-      fontAwesomeClassname: "fas fa-layer-group"
-    },
-    {
-      skillName: "Neo4j",
-      fontAwesomeClassname: "fas fa-project-diagram"
-    },
+    // Generative AI & LLMs
     {
       skillName: "LangGraph",
-      fontAwesomeClassname: "fas fa-network-wired"
+      fontAwesomeClassname: "fas fa-network-wired",
+      category: "Generative AI & LLMs"
     },
     {
       skillName: "LangChain",
-      fontAwesomeClassname: "fas fa-link"
+      fontAwesomeClassname: "fas fa-link",
+      category: "Generative AI & LLMs"
     },
     {
       skillName: "CrewAI",
-      fontAwesomeClassname: "fas fa-users-cog"
+      fontAwesomeClassname: "fas fa-users-cog",
+      category: "Generative AI & LLMs"
     },
     {
       skillName: "Ollama",
-      fontAwesomeClassname: "fas fa-microchip"
+      fontAwesomeClassname: "fas fa-microchip",
+      category: "Generative AI & LLMs"
     },
     {
       skillName: "Gemini API",
-      fontAwesomeClassname: "fas fa-brain"
+      fontAwesomeClassname: "fas fa-brain",
+      category: "Generative AI & LLMs"
     },
     {
       skillName: "Groq API",
-      fontAwesomeClassname: "fas fa-bolt"
+      fontAwesomeClassname: "fas fa-bolt",
+      category: "Generative AI & LLMs"
     },
     {
       skillName: "OpenAI API",
-      fontAwesomeClassname: "fas fa-robot"
+      fontAwesomeClassname: "fas fa-robot",
+      category: "Generative AI & LLMs"
     },
     {
       skillName: "DeepSeek LLM",
-      fontAwesomeClassname: "fas fa-brain"
+      fontAwesomeClassname: "fas fa-brain",
+      category: "Generative AI & LLMs"
     },
-    {
-      skillName: "FastAPI",
-      fontAwesomeClassname: "fas fa-server"
-    },
-    {
-      skillName: "Streamlit",
-      fontAwesomeClassname: "fas fa-desktop"
-    },
-    {
-      skillName: "Next.js",
-      fontAwesomeClassname: "fas fa-layer-group"
-    },
-    {
-      skillName: "React",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "TypeScript",
-      fontAwesomeClassname: "fas fa-code"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "Tailwind CSS",
-      fontAwesomeClassname: "fas fa-paint-brush"
-    },
-    {
-      skillName: "Vite",
-      fontAwesomeClassname: "fas fa-bolt"
-    },
-    {
-      skillName: "Remotion",
-      fontAwesomeClassname: "fas fa-video"
-    },
+
+    // MLOps & Infrastructure
     {
       skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
+      fontAwesomeClassname: "fab fa-docker",
+      category: "MLOps & Infrastructure"
     },
     {
       skillName: "Kubernetes",
-      fontAwesomeClassname: "fas fa-dharmachakra"
+      fontAwesomeClassname: "fas fa-dharmachakra",
+      category: "MLOps & Infrastructure"
     },
     {
       skillName: "Airflow",
-      fontAwesomeClassname: "fas fa-wind"
+      fontAwesomeClassname: "fas fa-wind",
+      category: "MLOps & Infrastructure"
     },
     {
       skillName: "GitHub Actions",
-      fontAwesomeClassname: "fab fa-github"
+      fontAwesomeClassname: "fab fa-github",
+      category: "MLOps & Infrastructure"
     },
     {
       skillName: "Vercel",
-      fontAwesomeClassname: "fas fa-cloud-upload-alt"
-    },
-    {
-      skillName: "PyTorch",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "TensorFlow",
-      fontAwesomeClassname: "fas fa-microchip"
-    },
-    {
-      skillName: "Scikit-Learn",
-      fontAwesomeClassname: "fas fa-cogs"
-    },
-    {
-      skillName: "Pandas",
-      fontAwesomeClassname: "fas fa-chart-pie"
-    },
-    {
-      skillName: "NumPy",
-      fontAwesomeClassname: "fas fa-calculator"
-    },
-    {
-      skillName: "Plotly",
-      fontAwesomeClassname: "fas fa-chart-line"
-    },
-    {
-      skillName: "FFmpeg",
-      fontAwesomeClassname: "fas fa-file-video"
+      fontAwesomeClassname: "fas fa-cloud-upload-alt",
+      category: "MLOps & Infrastructure"
     },
     {
       skillName: "Prometheus",
-      fontAwesomeClassname: "fas fa-chart-bar"
+      fontAwesomeClassname: "fas fa-chart-bar",
+      category: "MLOps & Infrastructure"
     },
     {
       skillName: "Grafana",
-      fontAwesomeClassname: "fas fa-tachometer-alt"
+      fontAwesomeClassname: "fas fa-tachometer-alt",
+      category: "MLOps & Infrastructure"
     },
     {
       skillName: "Bash",
-      fontAwesomeClassname: "fas fa-terminal"
+      fontAwesomeClassname: "fas fa-terminal",
+      category: "MLOps & Infrastructure"
+    },
+
+    // Databases & Vector Stores
+    {
+      skillName: "NeonDB",
+      fontAwesomeClassname: "fas fa-database",
+      category: "Databases & Vector Stores"
+    },
+    {
+      skillName: "Supabase",
+      fontAwesomeClassname: "fas fa-bolt",
+      category: "Databases & Vector Stores"
+    },
+    {
+      skillName: "ChromaDB",
+      fontAwesomeClassname: "fas fa-layer-group",
+      category: "Databases & Vector Stores"
+    },
+    {
+      skillName: "Neo4j",
+      fontAwesomeClassname: "fas fa-project-diagram",
+      category: "Databases & Vector Stores"
+    },
+
+    // Backend & Web Dev
+    {
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python",
+      category: "Backend & Web Dev"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-server",
+      category: "Backend & Web Dev"
+    },
+    {
+      skillName: "Streamlit",
+      fontAwesomeClassname: "fas fa-desktop",
+      category: "Backend & Web Dev"
+    },
+    {
+      skillName: "Next.js",
+      fontAwesomeClassname: "fas fa-layer-group",
+      category: "Backend & Web Dev"
+    },
+    {
+      skillName: "React",
+      fontAwesomeClassname: "fab fa-react",
+      category: "Backend & Web Dev"
+    },
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fas fa-code",
+      category: "Backend & Web Dev"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js",
+      category: "Backend & Web Dev"
+    },
+    {
+      skillName: "Tailwind CSS",
+      fontAwesomeClassname: "fas fa-paint-brush",
+      category: "Backend & Web Dev"
+    },
+    {
+      skillName: "Vite",
+      fontAwesomeClassname: "fas fa-bolt",
+      category: "Backend & Web Dev"
+    },
+    {
+      skillName: "Remotion",
+      fontAwesomeClassname: "fas fa-video",
+      category: "Backend & Web Dev"
+    },
+
+    // Data Science & Machine Learning
+    {
+      skillName: "PyTorch",
+      fontAwesomeClassname: "fas fa-fire",
+      category: "Data Science & ML"
+    },
+    {
+      skillName: "TensorFlow",
+      fontAwesomeClassname: "fas fa-microchip",
+      category: "Data Science & ML"
+    },
+    {
+      skillName: "Scikit-Learn",
+      fontAwesomeClassname: "fas fa-cogs",
+      category: "Data Science & ML"
+    },
+    {
+      skillName: "Pandas",
+      fontAwesomeClassname: "fas fa-chart-pie",
+      category: "Data Science & ML"
+    },
+    {
+      skillName: "NumPy",
+      fontAwesomeClassname: "fas fa-calculator",
+      category: "Data Science & ML"
+    },
+    {
+      skillName: "Plotly",
+      fontAwesomeClassname: "fas fa-chart-line",
+      category: "Data Science & ML"
+    },
+    {
+      skillName: "FFmpeg",
+      fontAwesomeClassname: "fas fa-file-video",
+      category: "Data Science & ML"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -243,10 +289,57 @@ const educationInfo = {
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// Your top proficient stacks/tech experience
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
+  categorizedExperience: [
+    {
+      categoryName: "🤖 Generative AI & Agentic Frameworks",
+      skills: [
+        { Stack: "LangGraph & LangChain" },
+        { Stack: "CrewAI & Agentic AI" },
+        { Stack: "Gemini & Groq LLMs" },
+        { Stack: "Ollama & Local LLMs" },
+        { Stack: "DeepSeek & AI Agents" }
+      ]
+    },
+    {
+      categoryName: "⚙️ MLOps & Infrastructure",
+      skills: [
+        { Stack: "Docker & Kubernetes" },
+        { Stack: "Apache Airflow & MLOps" },
+        { Stack: "GitHub Actions & CI/CD" },
+        { Stack: "Prometheus & Grafana" }
+      ]
+    },
+    {
+      categoryName: "🗄️ Databases & Vector Stores",
+      skills: [
+        { Stack: "ChromaDB & Vector DBs" },
+        { Stack: "NeonDB PostgreSQL" },
+        { Stack: "Supabase" }
+      ]
+    },
+    {
+      categoryName: "🌐 Backend & Web Development",
+      skills: [
+        { Stack: "Python" },
+        { Stack: "FastAPI & Backend" },
+        { Stack: "Next.js & React" },
+        { Stack: "Streamlit & UI Tools" },
+        { Stack: "TypeScript & JS" }
+      ]
+    },
+    {
+      categoryName: "📊 Data Science & Machine Learning",
+      skills: [
+        { Stack: "Scikit-Learn & ML" },
+        { Stack: "PyTorch & TensorFlow" },
+        { Stack: "FFmpeg & Video Automation" }
+      ]
+    }
+  ],
   experience: [
     { Stack: "Python" },
     { Stack: "NeonDB PostgreSQL" },

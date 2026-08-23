@@ -43,12 +43,39 @@
   height: auto;
 }
 
+// Category Group Styling
+.tech-category-group {
+  margin-bottom: 32px;
+}
+
+.tech-category-heading {
+  font-family: "Inter", "Outfit", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: $titleColor;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+
+  .dark-mode & {
+    color: $textColorDark;
+  }
+
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(100, 91, 235, 0.3), transparent);
+    margin-left: 15px;
+  }
+}
+
 // Responsive Skills Card Grid
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 16px;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
 }
 

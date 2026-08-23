@@ -1,20 +1,35 @@
-# Session Summary: 2026-08-23
+# Session Summary - 2026-08-23
 
 ## Objective
-Extract all open-source libraries, databases, AI frameworks, and tech stacks used across all 79 workspace and drive project directories, and update the Technical Skills section in the portfolio UI without percentage indicators.
+Categorize and group all software skills and technical stacks on the portfolio website into 5 structured technology domains: Generative AI & Agents, MLOps & Infrastructure, Databases & Vector Stores, Backend & Web Development, and Data Science & Machine Learning.
 
 ## Accomplishments
-1. **Deep Project Scanning (79 Repositories)**:
-   - Created and executed a deep-scanner script to inspect all project directories across `C:\Users\Admin\Desktop\Projects`, `D:\Antigravity-Projects`, `D:\youtube-projects`, `D:\mppsc`, `E:\hdd-data\Projects`, `E:\hdd-data\pulse-vector`, etc.
-   - Discovered core and optional stack dependencies across `package.json`, `requirements.txt`, `.env.example`, `.env`, `Dockerfile`, and `README.md` files.
+1. **Portfolio Data Refactoring (`src/portfolio.js`)**:
+   - Categorized 37 `softwareSkills` icons into 5 technology domains with `category` metadata.
+   - Restructured `techStack` to include `categorizedExperience` for categorized technical stack cards while keeping `experience` for backwards compatibility.
 
-2. **Technical Skills UI & Data Updates**:
-   - **`skillsSection.softwareSkills`** (`portfolio.js`): Added 37 software skill icons including **NeonDB PostgreSQL**, Supabase, ChromaDB, Neo4j, LangGraph, LangChain, CrewAI, Ollama, DeepSeek LLM, Gemini API, Groq API, OpenAI API, FastAPI, Streamlit, Next.js, React, Tailwind CSS, Vite, Remotion, Docker, Kubernetes, Apache Airflow, GitHub Actions, Vercel, PyTorch, TensorFlow, Scikit-Learn, Pandas, NumPy, Plotly, FFmpeg, Prometheus, Grafana, and Bash.
-   - **`techStack.experience`** (`portfolio.js`): Expanded grid to 18 clean technical stack cards representing all project domains and **removed all percentage progress indicators as requested**.
-   - **`getIconForSkill`** (`skillProgress.js`): Extended FontAwesome icon resolution logic for all 18 tech stack cards.
+2. **Software Skills UI Overhaul (`src/components/softwareSkills/SoftwareSkill.js` & `SoftwareSkill.scss`)**:
+   - Implemented dynamic category filter tabs (`All`, `Generative AI & LLMs`, `MLOps & Infrastructure`, `Databases & Vector Stores`, `Backend & Web Dev`, `Data Science & ML`).
+   - Added category section header badges (`category-group-badge`) and smooth hover animations.
 
-3. **Build & Quality Assurance**:
-   - Ran `npm run build` inside `developerFolio/`. Verified zero compilation errors and clean bundle output.
+3. **Technical Skills Progress UI Upgrade (`src/containers/skillProgress/skillProgress.js` & `Progress.scss`)**:
+   - Refactored `StackProgress` container to render cards under distinct category headers with stylish linear gradient accent dividers.
 
-4. **Documentation & Versioning**:
-   - Incremented version to `v1.8.0` in `docs/VERSION.md` and appended release highlights to `docs/CHANGELOG.md`.
+4. **Production Build Validation**:
+   - Resolved Terser plugin memory limit issue (`NODE_OPTIONS=--max-old-space-size=4096`).
+   - Verified zero-error compilation with React Scripts (`Compiled successfully.`).
+
+5. **Documentation & Versioning**:
+   - Bumped project version to **v1.9.0** in `docs/VERSION.md`.
+   - Updated `docs/CHANGELOG.md` and created session summary logs.
+
+## Files Modified / Created
+- `developerFolio/src/portfolio.js`
+- `developerFolio/src/components/softwareSkills/SoftwareSkill.js`
+- `developerFolio/src/components/softwareSkills/SoftwareSkill.scss`
+- `developerFolio/src/containers/skillProgress/skillProgress.js`
+- `developerFolio/src/containers/skillProgress/Progress.scss`
+- `docs/VERSION.md`
+- `docs/CHANGELOG.md`
+- `logs/session_summaries/session_summary_2026-08-23.md`
+- `logs/token_tracking/session_token_telemetry.md`
