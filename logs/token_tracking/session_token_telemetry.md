@@ -6,7 +6,7 @@ This log tracks token usage and model execution telemetry per session.
 
 | Session Date | Session Objective / Task | Input Tokens | Output Tokens | Total Tokens | Model | Status |
 |---|---|---|---|---|---|---|
-| **2026-08-23** | Technical skills categorization into 5 domains, filter tabs, group headers, build & packup | ~48,000 | ~4,200 | ~52,200 | Gemini 3.6 Flash | SUCCESS |
+| **2026-08-23** | Technical skills categorization into 5 domains, UI decluttering, code view removal, project renaming & v2.0.0 packup | ~68,000 | ~6,500 | ~74,500 | Gemini 3.6 Flash | SUCCESS |
 | **2026-08-19** | Dynamic project scan, portfolio projects section update (16 projects), URL verification, build & final packup | ~62,000 | ~5,500 | ~67,500 | Gemini 3.7 Flash | SUCCESS |
 | **2026-08-17** | Image corruption fix (IMG_2602), Webpack 5 module fallback & Vercel CI build resolution | ~92,000 | ~7,800 | ~99,800 | Gemini 3.6 Flash | SUCCESS |
 | **2026-08-16** | Project inventory scan & logs directory restructuring into subfolders | ~35,000 | ~2,500 | ~37,500 | Gemini 3.6 Flash | SUCCESS |

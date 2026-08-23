@@ -399,7 +399,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "A SHOWCASE OF 16 PRODUCTION-GRADE AI, AGENTIC SYSTEMS, MLOPS & WEB APPLICATIONS",
+  subtitle: "A SHOWCASE OF PRODUCTION-GRADE AI, AGENTIC SYSTEMS, MLOPS & WEB APPLICATIONS",
   projects: [
     {
       image: require("./assets/images/vitals_guard_logo.png"),
@@ -410,38 +410,25 @@ const bigProjects = {
         {
           name: "Visit Deployed Site",
           url: "https://vitalsguard.vercel.app/"
-        },
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/VitalsGuard-Health-Medication-Tracker"
         }
       ]
     },
     {
       image: require("./assets/images/stock_analysis_logo.png"),
-      projectName: "Local Stock Insights Autopilot Agent",
+      projectName: "EquityWhisper AI — Autonomous Market Insights",
       projectDesc: "A 100% local, automated pipeline that fetches stock analysis videos from YouTube, transcribes audio locally with faster-whisper CPU int8 quantization, runs CrewAI with Ollama for market insight extraction, and sends HTML newsletter digests via SMTP TLS.",
       techStack: ["CrewAI", "Ollama", "Python", "faster-whisper", "YouTube API", "SMTP"],
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/stocks_insights_agent"
-        }
-      ]
+      footerLink: []
     },
     {
       image: require("./assets/images/mahabharat_pipeline_logo.png"),
-      projectName: "Mahabharat (Automated Video Production)",
+      projectName: "EpicRender AI — Automated Video Production Engine",
       projectDesc: "An automated multi-platform video production system featuring AI-powered story script and storyboard generation, dynamic React video template compiling via Remotion, quota manager systems, and automated YouTube Data API v3 upload scheduling.",
       techStack: ["Python", "Node.js", "Remotion", "React", "Gemini API", "GitHub Actions"],
       footerLink: [
         {
           name: "Watch on YouTube",
           url: "https://www.youtube.com/playlist?list=PLTdRkcKiCRVA"
-        },
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/mahabharata-series-yt-animated"
         }
       ]
     },
@@ -450,84 +437,21 @@ const bigProjects = {
       projectName: "Pulse Vector",
       projectDesc: "A highly sophisticated automated content production engine featuring CAD-based scheduling (daily, weekly, monthly, brainteaser workflows) with Gemini API-powered content generation and Supabase Storage for asset offloading and video processing.",
       techStack: ["Python", "Gemini API", "Supabase", "FFmpeg", "YouTube API"],
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/pulsevector"
-        }
-      ]
+      footerLink: []
     },
     {
       image: require("./assets/images/travel_planner_agent_logo.png"),
       projectName: "Agentic AI Travel Planner",
       projectDesc: "An autonomous multi-tool AI travel concierge built with LangGraph and Gemini Flash featuring a ReAct agentic loop, real-time web & weather intelligence tools, Pydantic data schemas, and an interactive Streamlit UI.",
       techStack: ["LangGraph", "Gemini API", "Streamlit", "Python", "Pydantic", "Docker"],
-      footerLink: [
-        {
-          name: "View Codebase",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
+      footerLink: []
     },
     {
       image: require("./assets/images/daily_ca_insights_logo.png"),
       projectName: "Daily Current Affairs Insights",
       projectDesc: "A cloud-native, zero-CPU agentic system running on GitHub Actions. Automatically fetches transcripts from YouTube playlists, utilizes Groq API rate-limit header tracking to optimize execution, and commits idempotency states back to Git on SMTP success.",
       techStack: ["Python", "GitHub Actions", "Groq API", "YouTube API", "SMTP"],
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/Antigravity-daily-CA-Insights"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/orchestrator_prime_logo.png"),
-      projectName: "Orchestrator Prime (Family Management)",
-      projectDesc: "A fully local, 100% open-source, privacy-first multi-agent AI system for managing family interactions, tasks, schedules, and document intelligence with FastAPI backends and local LLM inference.",
-      techStack: ["Python", "FastAPI", "Groq", "Ollama", "Multi-Agent"],
-      footerLink: [
-        {
-          name: "View Local Architecture",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/financial_hub_ai_logo.png"),
-      projectName: "Intelligent Financial Hub AI",
-      projectDesc: "An intelligent personal finance and wealth management dashboard integrating multi-agent calculators for SIP vs. Lumpsum, EMI optimization, and LangChain-assisted financial planning with glassmorphic Streamlit UI and Plotly visualizations.",
-      techStack: ["Python", "Streamlit", "LangChain", "Plotly", "Financial Analytics"],
-      footerLink: [
-        {
-          name: "View Codebase",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/weather_agentic_ai_logo.png"),
-      projectName: "Weather Intelligence Agent",
-      projectDesc: "An agentic real-time meteorological system using LangGraph ReAct agents, Tavily Search integration, and Google Gemini LLMs to parse and provide deep predictive weather insights and activity advisories.",
-      techStack: ["LangGraph", "Gemini API", "Tavily Search", "Streamlit", "Python"],
-      footerLink: [
-        {
-          name: "View Codebase",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/repo_insight_logo.png"),
-      projectName: "TaskPulse Enterprise",
-      projectDesc: "A modern, full-stack enterprise productivity workspace built with Next.js 14 App Router, React 19, Tailwind CSS, and NeonDB PostgreSQL for scalable task & workspace orchestration.",
-      techStack: ["Next.js", "React 19", "Tailwind CSS", "NeonDB PostgreSQL", "TypeScript"],
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/taskpulse"
-        }
-      ]
+      footerLink: []
     },
     {
       image: require("./assets/images/vibrant_music_academy_logo.png"),
@@ -538,38 +462,18 @@ const bigProjects = {
         {
           name: "Visit Deployed Site",
           url: "https://vibrantmusicacademy.vercel.app/"
-        },
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/vibrant-music-academy"
         }
       ]
     },
     {
       image: require("./assets/images/target_air_10_logo.png"),
-      projectName: "TARGET AIR 10 (Banking Exam Tracker)",
+      projectName: "ExamTrack 360 — Banking Test Analytics SPA",
       projectDesc: "A high-performance single-page web application (SPA) for tracking 399 test papers across 20 mock test categories, featuring analytics, revision countdowns, and automated progress logging.",
       techStack: ["JavaScript", "HTML5", "CSS3", "GitHub Actions", "Neon PostgreSQL"],
       footerLink: [
         {
           name: "Live App",
           url: "https://tiwari17aditya.github.io/adda-timetable-revision/"
-        },
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/adda-timetable-revision"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/git_auto_push_logo.png"),
-      projectName: "Git Auto-Push Automation",
-      projectDesc: "A minimal, professional background automation engine built in Python and VBScript that logs development milestones and orchestrates automated GitHub activity synchronization.",
-      techStack: ["Python", "Git Automation", "VBScript", "Shell"],
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/Adistar656/everydaypush"
         }
       ]
     },
@@ -578,36 +482,21 @@ const bigProjects = {
       projectName: "Professional Personal Tracker",
       projectDesc: "A robust CLI-based progress and habit tracking platform built with Python and Rich for terminal-rendered charts, data exports, and milestone tracking.",
       techStack: ["Python", "Rich CLI", "JSON Engine"],
-      footerLink: [
-        {
-          name: "View Codebase",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
+      footerLink: []
     },
     {
       image: require("./assets/images/project_converter_logo.png"),
       projectName: "Utility Projects Suite",
       projectDesc: "A curated suite of productivity tools and single-functionality utilities, including Gmail Auto-Cleaner (IMAP SSL), Eye Care Tracker, System Maintenance scripts, and GitHub development tools.",
       techStack: ["Python", "IMAP SSL", "CLI Tooling", "Bash"],
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tiwari17aditya/utility-projects"
-        }
-      ]
+      footerLink: []
     },
     {
       image: require("./assets/images/google_takeout_organizer_logo.png"),
       projectName: "Google Takeout Organizer",
       projectDesc: "An automated media sorting and deduplication tool designed to process massive Google Takeout archives, extract EXIF metadata, and restore original folder hierarchies.",
       techStack: ["Python", "EXIF Data Engine"],
-      footerLink: [
-        {
-          name: "View Codebase",
-          url: "https://github.com/tiwari17aditya"
-        }
-      ]
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true

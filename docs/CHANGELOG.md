@@ -2,6 +2,21 @@
 
 All notable changes to the portfolio website project are documented here using semantic versioning format.
 
+## [2.0.0] - 2026-08-23
+
+### Changed
+- **Code View Links Removal**: Removed `"View on GitHub"` / `"View Codebase"` buttons from project cards to streamline UI presentation.
+- **"What I Do" Decluttering**: Removed `<SoftwareSkill />` rendering from `Skills.js`, isolating software skills to the categorized **Technical Skills** section.
+- **Project Renaming**: Updated titles for key projects:
+  - `Local Stock Insights Autopilot Agent` ➔ `EquityWhisper AI — Autonomous Market Insights`
+  - `Mahabharat (Automated Video Production)` ➔ `EpicRender AI — Automated Video Production Engine`
+  - `TARGET AIR 10 (Banking Exam Tracker)` ➔ `ExamTrack 360 — Banking Test Analytics SPA`
+
+### Removed
+- **Archived 5 In-Development Projects**: Removed 5 WIP projects (*Orchestrator Prime*, *Intelligent Financial Hub AI*, *Weather Intelligence Agent*, *TaskPulse Enterprise*, *Git Auto-Push Automation*) from `portfolio.js` and stored in `docs/ongoing-or-not-verified-projects.md`.
+
+---
+
 ## [1.9.0] - 2026-08-23
 
 ### Added

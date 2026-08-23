@@ -1,12 +1,19 @@
 # Version Tracking
 
-Current Project Version: **v1.9.0**  
+Current Project Version: **v2.0.0**  
 Release Date: **2026-08-23**  
 Repository: [portfolio](https://github.com/tiwari17aditya/portfolio)
 
 ---
 
 ## Release History
+
+### v2.0.0 (2026-08-23)
+- **Portfolio UI Streamlining & Decluttering**: Removed code view links (`View on GitHub` / `View Codebase`) from all project cards to present a clean, high-impact showcase.
+- **"What I Do" UI Refinement**: Removed redundant software skill icons from the "What I Do" section (`Skills.js`), leaving it focused on core capability bullets while keeping all tech skills organized under *Technical Skills*.
+- **Archived 5 In-Development Projects**: Removed 5 WIP projects (*Orchestrator Prime*, *Intelligent Financial Hub AI*, *Weather Intelligence Agent*, *TaskPulse Enterprise*, *Git Auto-Push Automation*) from `portfolio.js` and archived them in `docs/ongoing-or-not-verified-projects.md`.
+- **Project Renaming**: Renamed showcase projects (*EquityWhisper AI — Autonomous Market Insights*, *EpicRender AI — Automated Video Production Engine*, *ExamTrack 360 — Banking Test Analytics SPA*).
+- **Production Build Validation**: Verified zero-error compilation with React Scripts (`Compiled successfully`).
 
 ### v1.9.0 (2026-08-23)
 - **Technical Skills Categorization & Grouping**: Refactored the flat list of 37 software skills and technical stack cards into 5 domain categories: *Generative AI & Agentic Frameworks*, *MLOps & Infrastructure*, *Databases & Vector Stores*, *Backend & Web Development*, and *Data Science & Machine Learning*.
